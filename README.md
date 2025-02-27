@@ -1,5 +1,5 @@
 # Proyectos de Ciencia de Datos: Visualización, Modelado y Análisis
-
+ 
 Este repositorio contiene proyectos enfocados en la aplicación de ciencia de datos para resolver problemas en diferentes áreas, desde visualización interactiva hasta integración con el mundo real. Los proyectos están organizados en categorías que reflejan las áreas clave del trabajo realizado.
 
 ---
