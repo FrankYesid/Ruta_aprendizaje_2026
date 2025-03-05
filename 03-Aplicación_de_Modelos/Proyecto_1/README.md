@@ -83,7 +83,7 @@ CVDs_Risk_Prediction/
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/yourusername/CVDs_Risk_Prediction.git
+   git clone https://github.com/yourusername/.git
    ```
 2. Instala las dependencias:
    ```sh
