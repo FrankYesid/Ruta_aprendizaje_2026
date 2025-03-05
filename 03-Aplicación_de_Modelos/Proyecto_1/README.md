@@ -15,7 +15,7 @@ El conjunto de datos original de BRFSS contenía **304 variables únicas**. De e
 ## Estructura del Proyecto
 
 ```
-CVDs_Risk_Prediction/
+Proyecto_1/
 ├── notebooks/            # Cuadernos Jupyter para análisis de datos y entrenamiento de modelos
 │   ├── 01_preanalisis.ipynb
 │   ├── 02_preprocesamiento.ipynb
