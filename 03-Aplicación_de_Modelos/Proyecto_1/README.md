@@ -91,7 +91,4 @@ Proyecto_1/
    ```
 3. Ejecuta los cuadernos Jupyter en la carpeta `notebooks/` para explorar el conjunto de datos y entrenar los modelos.
 
-## Agradecimientos
-
-Un agradecimiento especial a los **Centers for Disease Control and Prevention (CDC)** por proporcionar el conjunto de datos BRFSS y a los equipos de investigación que trabajan en modelos de predicción de enfermedades cardiovasculares.
 
