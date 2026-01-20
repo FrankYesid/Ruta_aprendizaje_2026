@@ -40,6 +40,17 @@ Se propone la implementación de un clasificador de ECG en un microcontrolador c
 - **Procesamiento de señales con SciPy y NumPy**.
 - **Edge Impulse** para la implementación en dispositivos embebidos.
 
+## Requerimientos de Instalación
+
+Instala las dependencias principales:
+```bash
+pip install numpy scipy scikit-learn matplotlib seaborn jupyter tensorflow
+```
+Opcional (alternativa a TensorFlow):
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
 ## Instrucciones de Uso
 1. Descargar y cargar los datos desde los enlaces proporcionados.
 2. Ejecutar los notebooks de preprocesamiento y entrenamiento.

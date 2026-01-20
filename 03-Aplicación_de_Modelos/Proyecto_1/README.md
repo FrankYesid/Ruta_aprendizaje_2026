@@ -87,7 +87,7 @@ Proyecto_1/
    ```
 2. Instala las dependencias:
    ```sh
-   pip install -r requirements.txt
+   pip install pandas numpy scikit-learn matplotlib seaborn jupyter tensorflow
    ```
 3. Ejecuta los cuadernos Jupyter en la carpeta `notebooks/` para explorar el conjunto de datos y entrenar los modelos.
 
