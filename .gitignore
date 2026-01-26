@@ -11,7 +11,8 @@ env/
 *.swo
 *.tmp
 *.log
-data/
+ data/*
+ !**/data/.gitkeep
 html/
 *.env
 *.sqlite
