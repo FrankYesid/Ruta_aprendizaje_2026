@@ -101,3 +101,9 @@ Abordar problemas reales mediante la implementación de soluciones basadas en da
 - **Preprocesamiento**: Pandas, NumPy, NLTK, SpaCy.
 - **Herramientas**: Jupyter Notebooks, Streamlit, Dash, Power BI.
 
+---
+
+## Licencia
+
+Este repositorio está licenciado bajo **MIT**. Consulta el archivo [LICENSE](file:///d:/GitHub/Ruta_aprendizaje_2024/LICENSE) para más detalles.
+
