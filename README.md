@@ -1,7 +1,6 @@
-actualizar version
 # Proyectos de Ciencia de Datos: Visualización, Modelado y Análisis
- 
-Este repositorio contiene proyectos enfocados en la aplicación de ciencia de datos para resolver problemas en diferentes áreas, desde visualización interactiva hasta integración con el mundo real. Los proyectos están organizados en categorías que reflejan las áreas clave del trabajo realizado.
+
+Este repositorio contiene proyectos enfocados en la aplicación de ciencia de datos para resolver problemas en diferentes áreas, desde visualización interactiva hasta integración con el mundo real.
 
 ---
 
@@ -18,6 +17,8 @@ Explorar y comunicar patrones clave en los datos mediante herramientas de visual
 
 ---
 
+[Enlace a la carpeta de Visualización de Datos](https://github.com/FrankYesid/Ruta_aprendizaje_2025/tree/main/01-Visualización_de_Datos)
+
 ## 2. Tratamiento de Datos
 ### Objetivo
 Garantizar que los datos sean confiables y estén listos para análisis y modelado mediante técnicas de preprocesamiento y limpieza.
@@ -28,6 +29,8 @@ Garantizar que los datos sean confiables y estén listos para análisis y modela
 8. **Extracción de texto de imágenes**: Uso de OCR para extracción y análisis de texto.
 9. **Detección de datos atípicos**: Identificación de anomalías en bases de datos financieras y médicas.
 10. **Procesamiento de texto**: Preprocesamiento de datos de redes sociales para análisis de sentimientos.
+
+[Enlace a la carpeta de Tratamiento de Datos](https://github.com/FrankYesid/Ruta_aprendizaje_2025/tree/main/02-Tratamiento_de_Datos)
 
 ---
 
@@ -106,4 +109,3 @@ Abordar problemas reales mediante la implementación de soluciones basadas en da
 ## Licencia
 
 Este repositorio está licenciado bajo **MIT**. Consulta el archivo [LICENSE](file:///d:/GitHub/Ruta_aprendizaje_2024/LICENSE) para más detalles.
-
