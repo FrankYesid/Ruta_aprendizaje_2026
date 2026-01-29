@@ -12,3 +12,4 @@ Conjunto de proyectos para aplicar técnicas avanzadas de análisis de datos y m
 - Proyecto_4: Análisis de texto jurídico
 - Proyecto_5: Segmentación de clientes
 
+proximos pasos...
