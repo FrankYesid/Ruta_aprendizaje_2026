@@ -63,6 +63,12 @@ pip install pandas numpy scikit-learn scikit-surprise implicit lightfm sqlalchem
 - Consideraciones: sesgo de popularidad, cold-start (nuevos usuarios/ítems), sampling estratificado para validación.
 - Fuente de datos: MovieLens (GroupLens).
 
+## Origen de la Base de Datos
+
+- Los datasets provienen de MovieLens (GroupLens): https://grouplens.org/datasets/movielens/latest/
+- ml-latest-small.zip (~1 MB): 100.000 ratings y 3.600 aplicaciones de tags en ~9.000 películas por ~600 usuarios.
+- ml-latest.zip (~335 MB): ~33.000.000 ratings y ~2.000.000 aplicaciones de tags en ~86.000 películas por ~330.975 usuarios; incluye tag genome con ~14 millones de relevancias sobre ~1.100 tags.
+
 ## Licencia
 
 Este proyecto se rige por la licencia MIT del repositorio. Consulta el archivo LICENSE en la raíz.
