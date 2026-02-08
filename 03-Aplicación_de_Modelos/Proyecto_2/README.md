@@ -1,97 +1,68 @@
-# Sistema de Recomendación de Libros o Películas
+# Optimización de Rutas de Transporte (VRP)
+
+## Descripción
+
+Algoritmos para mejorar la logística resolviendo el Vehicle Routing Problem (VRP) y variantes como CVRP (capacidad) y, si aplica, ventanas de tiempo. Se trabaja con el dataset VRP.csv y se implementan enfoques exactos y metaheurísticos.
 
 ## Estructura del Proyecto
 
 ```
 Proyecto_2/
-├── data/                       # Archivos de datos para el sistema
-│   ├── users.csv               # Usuarios: id, nombre, edad, país (opcional)
-│   ├── items.csv               # Ítems: id, título, tipo, géneros, año
-│   ├── ratings.csv             # Valoraciones: user_id, item_id, rating, timestamp
-│   └── tags.csv                # (Opcional) Etiquetas: user_id, item_id, tag, timestamp
-├── notebooks/                  # Cuadernos Jupyter para exploración y modelado
-│   ├── 01_exploracion_datos.ipynb
-│   ├── 02_preprocesamiento.ipynb
-│   ├── 03_modelos_recomendacion.ipynb
-│   └── 04_evaluacion_modelos.ipynb
+├── data/                       # Datos VRP (VRP.csv) y README.txt
+├── notebooks/                  # Flujo completo
+│   ├── 01_ingesta_estandarizacion.ipynb
+│   ├── 02_eda_visualizacion.ipynb
+│   ├── 03_modelo_or_tools.ipynb
+│   ├── 04_modelo_ga.ipynb
+│   ├── 05_comparacion_resultados.ipynb
+│   └── 06_evaluacion_metricas.ipynb
 ├── src/                        # Código fuente (opcional)
-│   ├── pipeline.py
-│   └── utils.py
+│   ├── loaders.py
+│   └── vrp_utils.py
 ├── LICENSE                     # Licencia del proyecto
 └── README.md                   # Documentación del proyecto
 ```
 
-## Base de Datos
+## Dataset
 
-- Usuarios
-  - id (int, PK)
-  - nombre (string)
-  - edad (int, opcional)
-  - país (string, opcional)
-- Ítems
-  - id (int, PK)
-  - título (string)
-  - tipo (enum: libro|película)
-  - géneros (string, lista separada por “|”)
-  - año (int)
-- Ratings
-  - user_id (int, FK usuarios.id)
-  - item_id (int, FK ítems.id)
-  - rating (float o int, escala 1–5)
-  - timestamp (datetime)
-- Tags (opcional)
-  - user_id (int, FK)
-  - item_id (int, FK)
-  - tag (string)
-  - timestamp (datetime)
+- Archivo base: `data/VRP.csv`
+- Origen: Kaggle – Vehicle Routing Problem GA Dataset: https://www.kaggle.com/datasets/abhilashg23/vehicle-routing-problem-ga-dataset?resource=download
+- Estructura esperada:
+  - Coordenadas de clientes (X/Y o lat/lon)
+  - Demanda por cliente
+  - Capacidad de vehículos
+  - Índice o coordenadas del depósito
+  - (Opcional) Ventanas de tiempo, costos por arco, matriz de distancias
 
-Formato recomendado: CSV en la carpeta `data/`. Alternativamente, se puede usar SQLite (`data/recs.db`) con las mismas tablas.
+Coloca el archivo `VRP.csv` en la carpeta `data/` y consulta `data/README.txt` para detalles.
 
-## Requerimientos Detallados
+## Requerimientos
 
-- Software
-  - Python 3.9 o superior
-  - Jupyter Notebook o JupyterLab
-- Librerías
-  - pandas, numpy
-  - scikit-learn
-  - scikit-surprise o implicit/lightfm (según el enfoque)
-  - sqlalchemy (si se usa SQLite/PostgreSQL)
-  - matplotlib, seaborn
-- Instalación
-  ```sh
-  pip install pandas numpy scikit-learn scikit-surprise sqlalchemy matplotlib seaborn
-  ```
-  Para modelos basados en factoración:
-  ```sh
-  pip install implicit lightfm
-  ```
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn ortools networkx deap jupyter
+```
 
-## Cómo Visualizar la Información
+## Cómo Trabajar en los Cuadernos
 
-- Colocar los archivos `users.csv`, `items.csv`, `ratings.csv` en `Proyecto_2/data/`.
-- Abrir y ejecutar los cuadernos en `Proyecto_2/notebooks/` para:
-  - Explorar estadísticas básicas de usuarios, ítems y ratings.
-  - Entrenar modelos de recomendación (filtrado colaborativo, contenido e híbridos).
-  - Evaluar con métricas como RMSE, Precision@K, Recall@K y MAP.
-- Ejemplo rápido en Python:
-  ```python
-  import pandas as pd
-  users = pd.read_csv("data/users.csv")
-  items = pd.read_csv("data/items.csv")
-  ratings = pd.read_csv("data/ratings.csv")
-  print(users.head(), items.head(), ratings.head(), sep="\n\n")
-  ```
+- 01_ingesta_estandarizacion: carga VRP.csv, estandariza tipos y columnas y construye matrices necesarias (distancias, demanda).
+- 02_eda_visualizacion: distribuciones de demanda, visualización geográfica de clientes y depósito.
+- 03_modelo_or_tools: resolución con OR-Tools (CVRP), obtención de rutas y costo total.
+- 04_modelo_ga: metaheurística GA para CVRP/VRP, configuración y resultados.
+- 05_comparacion_resultados: comparación entre enfoques (costo, número de vehículos, restricciones).
+- 06_evaluacion_metricas: métricas de calidad de ruta, factibilidad y rendimiento.
+
+## Métricas y Resultados
+
+- Costo total de distancia/tiempo
+- Cumplimiento de capacidad y ventanas de tiempo (si existen)
+- Balanceo entre vehículos
+- Visualización de rutas y comparación de enfoques
 
 ## Información Relacionada
 
-- Datasets recomendados:
-  - MovieLens (recomendación de películas)
-  - Goodreads (recomendación de libros)
-- Referencias técnicas:
-  - Filtrado colaborativo basado en usuarios y en ítems
-  - Factorización de matrices (ALS, SVD)
-  - Modelos híbridos combinando contenido y colaborativo
+- Técnicas: OR-Tools (Routing), heurísticas, metaheurísticas (GA), búsqueda local.
+- Consideraciones: construcción de matrices de distancia, normalización de coordenadas, tuning de hiperparámetros en GA.
+- Fuente de datos: Kaggle – Vehicle Routing Problem GA Dataset.
 
 ## Licencia
 
