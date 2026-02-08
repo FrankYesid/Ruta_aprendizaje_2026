@@ -18,3 +18,5 @@ Proyecto_3/
 ```bash
 pip install pandas numpy geopandas rasterio shapely matplotlib seaborn jupyter
 ```
+
+pendiente actualizacion ...
