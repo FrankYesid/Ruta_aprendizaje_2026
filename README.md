@@ -37,8 +37,8 @@ Resolver problemas específicos mediante la implementación de modelos predictiv
 
 ### Proyectos
 11. **Predicción de enfermedades**: Modelos para predecir condiciones como diabetes o enfermedades cardíacas.
-12. **Recomendación de libros o películas**: Sistemas de recomendación basados en preferencias.
-13. **Optimización de rutas de transporte**: Algoritmos para mejorar la logística.
+12. **Optimización de rutas de transporte**: Algoritmos para mejorar la logística.
+13. **Recomendación de libros o películas**: Sistemas de recomendación basados en preferencias.
 14. **Predicción del precio de la vivienda**: Modelos predictivos basados en datos locales.
 15. **Clasificación para reciclaje**: Identificación de tipos de basura mediante modelos de clasificación de imágenes.
 

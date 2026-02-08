@@ -1,8 +1,10 @@
 pandas
 numpy
+scikit-learn
+scikit-surprise
+implicit
+lightfm
+sqlalchemy
 matplotlib
 seaborn
-scikit-learn
-ortools
-networkx
 jupyter
