@@ -1,1 +1,74 @@
-# Módulos de Proyecto 4: Predicción del Precio de Vivienda\n\"\"\"\nMódulos de apoyo para el proyecto de predicción de precios de vivienda.\n\nEste paquete contiene:\n- data_preprocessing.py: Funciones para limpieza y preprocesamiento de datos\n- feature_engineering.py: Funciones para ingeniería de características\n- model_training.py: Funciones para entrenamiento y evaluación de modelos\n\"\"\"\n\nfrom .data_preprocessing import (\n    load_data,\n    validate_data,\n    clean_data,\n    scale_features,\n    prepare_data,\n    save_processed_data,\n    create_sample_data\n)\n\nfrom .feature_engineering import (\n    create_interaction_features,\n    create_polynomial_features,\n    create_ratio_features,\n    create_binning_features,\n    select_features_with_f_regression,\n    select_features_with_mutual_info,\n    select_features_with_random_forest,\n    engineer_all_features,\n    get_feature_selection_summary\n)\n\nfrom .model_training import (\n    create_model_pipelines,\n    get_hyperparameter_grids,\n    train_model_with_grid_search,\n    evaluate_model,\n    train_all_models,\n    select_best_model,\n    create_final_pipeline\n)\n\n__version__ = \"1.0.0\"\n__author__ = \"Proyecto 4 - Predicción de Precios de Vivienda\"
+"""
+Paquete de utilidades para el proyecto de predicción de precios de vivienda.
+
+Este paquete contiene módulos para:
+- Preprocesamiento de datos (data_preprocessing)
+- Ingeniería de características (feature_engineering)  
+- Entrenamiento de modelos (model_training)
+"""
+
+from .data_preprocessing import (
+    load_data,
+    validate_data,
+    clean_data,
+    scale_features,
+    prepare_data,
+    save_preprocessing_components,
+    load_preprocessing_components,
+    create_sample_data
+)
+
+from .feature_engineering import (
+    create_interaction_features,
+    create_polynomial_features,
+    create_ratio_features,
+    create_binning_features,
+    select_features_univariate,
+    select_features_importance,
+    engineer_all_features
+)
+
+from .model_training import (
+    evaluate_model,
+    train_model_with_cv,
+    comprehensive_evaluation,
+    train_linear_models,
+    train_advanced_models,
+    compare_models,
+    save_model,
+    load_model
+)
+
+__version__ = "1.0.0"
+__author__ = "Proyecto de Predicción de Precios de Vivienda"
+
+__all__ = [
+    # Data Preprocessing
+    'load_data',
+    'validate_data', 
+    'clean_data',
+    'scale_features',
+    'prepare_data',
+    'save_preprocessing_components',
+    'load_preprocessing_components',
+    'create_sample_data',
+    
+    # Feature Engineering
+    'create_interaction_features',
+    'create_polynomial_features',
+    'create_ratio_features',
+    'create_binning_features',
+    'select_features_univariate',
+    'select_features_importance',
+    'engineer_all_features',
+    
+    # Model Training
+    'evaluate_model',
+    'train_model_with_cv',
+    'comprehensive_evaluation',
+    'train_linear_models',
+    'train_advanced_models',
+    'compare_models',
+    'save_model',
+    'load_model'
+]
