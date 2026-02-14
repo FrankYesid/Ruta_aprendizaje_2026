@@ -126,6 +126,7 @@ Implementación de modelos de Deep Learning para la identificación automática 
 ### Objetivo
 Aplicar técnicas avanzadas de análisis para descubrir patrones, tendencias y predicciones complejas en grandes volúmenes de datos.
 
+proximo en realizar ...
 ### Proyectos
 
 #### [Proyecto 1: Análisis de Engagement en Redes Sociales](./04-analisis_avanzado/proyecto_1)
@@ -196,3 +197,4 @@ Implementar soluciones de ciencia de datos en entornos de producción y evaluar 
 ## Licencia
 
 Este repositorio está licenciado bajo **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
