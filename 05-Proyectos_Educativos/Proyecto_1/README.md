@@ -18,3 +18,4 @@ Proyecto_1/
 ```bash
 pip install numpy pandas matplotlib seaborn jupyter
 ```
+proximamente ...
