@@ -12,3 +12,4 @@ Espacio para proyectos orientados al aprendizaje práctico en ciencia de datos. 
 - Proyecto_4: Machine Learning explicable (XAI)
 - Proyecto_5: Juegos de datos
 
+proximo en realizar ...
