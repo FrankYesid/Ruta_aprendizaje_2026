@@ -1,0 +1,22 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.tmp
+*.log
+ data/*
+ !**/data/.gitkeep
+html/
+*.env
+*.sqlite
+*.db
+**/node_modules/
++.csv
+data/*.csv
