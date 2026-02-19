@@ -10,7 +10,7 @@ Se trabaja con una serie temporal multivariante que incluye medidas de potencia 
 
 - Nombre: Individual Household Electric Power Consumption
 - Fuente: UCI Machine Learning Repository
-- URL: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
+- URL oficial del dataset: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 - Licencia: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Características principales:
