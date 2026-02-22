@@ -126,21 +126,40 @@ Implementación de modelos de Deep Learning para la identificación automática 
 ### Objetivo
 Aplicar técnicas avanzadas de análisis para descubrir patrones, tendencias y predicciones complejas en grandes volúmenes de datos.
 
-proximo en realizar ...
 ### Proyectos
 
-#### [Proyecto 1: Análisis de Engagement en Redes Sociales](./04-analisis_avanzado/proyecto_1)
-Análisis exhaustivo de la interacción de usuarios en plataformas digitales para identificar factores de éxito del contenido.
-- **Técnicas:** EDA Avanzado, Análisis Temporal, Análisis de Sentimiento, Random Forest Regressor.
-- **Dataset:** [Social Media Engagement Dataset (Kaggle)](https://www.kaggle.com/datasets/divyaraj2006/social-media-engagement).
-- **Objetivo:** Identificar tendencias de engagement y predecir el impacto de las publicaciones.
+#### [Proyecto 1: Análisis de Engagement en Redes Sociales](./04-Analisis_Avanzado/Proyecto_1)
+Análisis exhaustivo del engagement en redes sociales utilizando métricas de interacción (likes, comentarios, compartidos) a través de diversas plataformas y tipos de contenido. Se exploran patrones temporales, el impacto del sentimiento y se desarrolla un modelo predictivo para estimar el éxito de las publicaciones.
+- **Técnicas:** EDA Avanzado, Análisis Temporal, Análisis de Sentimiento, Random Forest Regressor, Feature Importance.
+- **Dataset:** [Social Media Engagement Dataset (Kaggle)](https://www.kaggle.com/datasets/divyaraj2006/social-media-engagement) - 1000 registros de interacciones en redes sociales.
+- **Características clave:** post_id, platform, post_type, likes, comments, shares, sentiment_score.
+- **Objetivo:** Identificar tendencias de engagement por plataforma, analizar impacto temporal, evaluar relación entre sentimiento y rendimiento, y predecir el número de likes.
 
-- **[Proyecto 2: Patrones de consumo energético](./04-analisis_avanzado/proyecto_2)** - Análisis de datos eléctricos para optimización.
-- **[Proyecto 3: Series temporales](./04-analisis_avanzado/proyecto_3)** - Modelos para predecir ventas o eventos futuros.
-- **[Proyecto 4: Análisis de texto jurídico](./04-analisis_avanzado/proyecto_4)** - Uso de NLP para entender documentos legales.
-- **[Proyecto 5: Segmentación de clientes](./04-analisis_avanzado/proyecto_5)** - Agrupamiento de consumidores usando algoritmos de clustering.
+#### [Proyecto 2: Patrones de Consumo Energético](./04-Analisis_Avanzado/Proyecto_2)
+Análisis de patrones de consumo eléctrico en un hogar a partir de mediciones tomadas cada minuto durante casi cuatro años. Se explora cómo varía el consumo a lo largo del tiempo, se identifican periodos de mayor demanda y se analizan diferencias entre distintos tipos de uso eléctrico.
+- **Técnicas:** Series Temporales Multivariantes, Análisis de Patrones Diarios/Semanales/Estacionales, Detección de Anomalías, Pronóstico.
+- **Dataset:** [Individual Household Electric Power Consumption (UCI ML Repository)](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption) - 2,075,259 registros de diciembre 2006 a noviembre 2010.
+- **Características clave:** global_active_power, global_reactive_power, voltage, global_intensity, sub_metering_1/2/3.
+- **Objetivo:** Visualizar evolución del consumo a distintas escalas temporales, identificar patrones diarios/semanales/estacionales, analizar contribución de submediciones y detectar anomalías.
 
-📁 [Ver carpeta completa de Análisis Avanzado](./04-analisis_avanzado)
+#### [Proyecto 3: Series Temporales](./04-Analisis_Avanzado/Proyecto_3)
+Modelos avanzados para predecir ventas o eventos futuros mediante técnicas de series temporales. Este proyecto se enfoca en ARIMA, Prophet, LSTM y otras metodologías para pronóstico.
+- **Técnicas:** ARIMA, Prophet, LSTM, Exponential Smoothing, Análisis de Tendencias.
+- **Objetivo:** Desarrollar modelos robusts para predicción de series temporales en contextos financieros, de ventas y eventos futuros.
+- **Estructura:** EDA, ARIMA, Prophet, LSTM y comparación de modelos.
+
+#### [Proyecto 4: Análisis de Texto Jurídico](./04-Analisis_Avanzado/Proyecto_4)
+Aplicación de NLP avanzado para entender, procesar y clasificar documentos legales. Se realiza extracción de entidades, análisis de relaciones y clasificación automática de textos jurídicos.
+- **Técnicas:** Reconocimiento de Entidades Nombradas (NER), Clasificación de Documentos, Extracción de Información, Análisis de Similitud.
+- **Herramientas:** SpaCy, NLTK, Modelos de lenguaje.
+- **Objetivo:** Automatizar análisis de documentos legales, extraer información clave y clasificar tipos de documentos para agilizar procesos jurídicos.
+
+#### [Proyecto 5: Segmentación de Clientes](./04-Analisis_Avanzado/Proyecto_5)
+Agrupamiento de consumidores mediante algoritmos de clustering avanzados (K-means, Clustering Jerárquico, DBSCAN) para identificar segmentos de clientes con características similares.
+- **Técnicas:** K-means, Clustering Jerárquico, DBSCAN, Análisis de Validación, Interpretación de Clusters.
+- **Objetivo:** Identificar segmentos de clientes homogéneos para estrategias de marketing personalizadas, optimización de recursos y análisis del comportamiento del consumidor.
+
+📁 [Ver carpeta completa de Análisis Avanzado](./04-Analisis_Avanzado)
 
 ---
 
