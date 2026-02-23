@@ -164,6 +164,7 @@ Agrupamiento de consumidores mediante algoritmos de clustering avanzados (K-mean
 ---
 
 ## 5. Proyectos Educativos
+# pendiente este segmento
 ### Objetivo
 Desarrollar habilidades prácticas y fomentar el aprendizaje interactivo en ciencia de datos.
 
