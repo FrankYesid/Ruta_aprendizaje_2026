@@ -142,11 +142,12 @@ Análisis de patrones de consumo eléctrico en un hogar a partir de mediciones t
 - **Características clave:** global_active_power, global_reactive_power, voltage, global_intensity, sub_metering_1/2/3.
 - **Objetivo:** Visualizar evolución del consumo a distintas escalas temporales, identificar patrones diarios/semanales/estacionales, analizar contribución de submediciones y detectar anomalías.
 
-#### [Proyecto 3: Series Temporales](./04-Analisis_Avanzado/Proyecto_3)
-Modelos avanzados para predecir ventas o eventos futuros mediante técnicas de series temporales. Este proyecto se enfoca en ARIMA, Prophet, LSTM y otras metodologías para pronóstico.
-- **Técnicas:** ARIMA, Prophet, LSTM, Exponential Smoothing, Análisis de Tendencias.
-- **Objetivo:** Desarrollar modelos robusts para predicción de series temporales en contextos financieros, de ventas y eventos futuros.
-- **Estructura:** EDA, ARIMA, Prophet, LSTM y comparación de modelos.
+#### [Proyecto 3: Series Temporales Financieras](./04-Analisis_Avanzado/Proyecto_3)
+Pronóstico de precios de activos financieros utilizando series de tiempo multivariantes con retardos (lags) de múltiples acciones tecnológicas y bancarias (AAPL, GOOGL, MSFT, AMZN, JPM).
+- **Técnicas:** Análisis de Retardos (Lags t-0 a t-29), ARIMA, ydata-profiling, Análisis de Retornos Logarítmicos.
+- **Dataset:** [Financial Time Series Dataset (Kaggle)](https://www.kaggle.com/datasets/programmer3/financial-time-series-dataset) - Datos históricos con 30 retardos para predicción del target.
+- **Características clave:** AAPL, GOOGL, MSFT, AMZN, JPM (lags t-0 a t-29), target.
+- **Objetivo:** Desarrollar modelos robustos de forecasting para predecir el comportamiento futuro de activos financieros basados en dependencias temporales.
 
 #### [Proyecto 4: Análisis de Texto Jurídico](./04-Analisis_Avanzado/Proyecto_4)
 Aplicación de NLP avanzado para entender, procesar y clasificar documentos legales. Se realiza extracción de entidades, análisis de relaciones y clasificación automática de textos jurídicos.

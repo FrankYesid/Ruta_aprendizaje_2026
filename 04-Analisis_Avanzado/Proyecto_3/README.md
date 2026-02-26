@@ -2,13 +2,16 @@
 
 ## Descripción del Proyecto
 
-Este proyecto explora y modela series temporales financieras a partir de un conjunto de datos histórico con precios y variables asociadas. El objetivo es entender el comportamiento temporal de los precios, analizar su distribución y construir modelos de pronóstico que permitan estimar valores futuros.
+Este proyecto explora y modela series temporales financieras utilizando un dataset multivariante con retardos (lags) de activos tecnológicos y bancarios. Se analiza el comportamiento de acciones como **Apple (AAPL)**, **Google (GOOGL)**, **Microsoft (MSFT)**, **Amazon (AMZN)** y **JPMorgan (JPM)**, con una ventana de observación de 30 días (t-0 a t-29) para predecir un valor objetivo (target).
+
+El objetivo es entender la dinámica temporal de los activos, realizar un análisis exploratorio detallado y construir modelos de pronóstico (Forecasting) que aprovechen la información histórica de los retardos.
 
 ## Dataset
 
-- Nombre: Financial Time Series Dataset
-- Fuente: Kaggle
-- URL oficial del dataset: https://www.kaggle.com/datasets/programmer3/financial-time-series-dataset
+- **Nombre:** Financial Time Series Dataset
+- **Fuente:** Kaggle
+- **URL oficial del dataset:** [https://www.kaggle.com/datasets/programmer3/financial-time-series-dataset](https://www.kaggle.com/datasets/programmer3/financial-time-series-dataset)
+- **Estructura de Columnas:** Incluye 30 retardos por cada activo financiero (AAPL_t-0, GOOGL_t-0... JPM_t-29) y una columna `target`.
 
 El archivo de trabajo principal se encuentra en:
 
