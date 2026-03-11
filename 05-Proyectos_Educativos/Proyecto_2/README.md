@@ -28,10 +28,12 @@ Proyecto_2/
 ├── data/                  # Archivos de datos originales y procesados
 │   ├── my_file (1).csv    # Dataset original "sucio"
 │   └── music_tours_cleaned.csv # Resultado final de la limpieza
-├── notebooks/             # Retos de limpieza paso a paso
+├── notebooks/             # Retos de limpieza y visualización paso a paso
 │   ├── 01_exploracion_inicial.ipynb # Identificación de problemas de calidad
-│   └── 02_limpieza_y_normalizacion.ipynb # Transformación y corrección de datos
-├── requirements.txt       # Dependencias necesarias (pandas, re, etc.)
+│   ├── 02_limpieza_y_normalizacion.ipynb # Transformación y corrección de datos
+│   ├── 03_visualizacion_basica.ipynb # Distribuciones y estadísticas descriptivas
+│   └── 04_analisis_visual_avanzado.ipynb # Correlaciones y tendencias económicas
+├── requirements.txt       # Dependencias necesarias (pandas, seaborn, etc.)
 └── README.md              # Documentación actual
 ```
 
@@ -48,7 +50,8 @@ pip install -r requirements.txt
 1.  **Diagnóstico de Calidad**: Aprender a utilizar `pandas` para identificar inconsistencias estructurales y de contenido.
 2.  **Expresiones Regulares (Regex)**: Utilizar el módulo `re` de Python para limpiar cadenas de texto complejas y extraer valores numéricos.
 3.  **Normalización de Formatos**: Convertir columnas de ingresos y fechas en tipos de datos adecuados para el análisis numérico.
-4.  **Tratamiento de Nulos**: Implementar estrategias de imputación o eliminación de valores faltantes basadas en el contexto de los datos.
+4.  **Visualización Exploratoria**: Utilizar `matplotlib` y `seaborn` para comunicar hallazgos y validar la efectividad de la limpieza.
+5.  **Análisis de Correlaciones**: Identificar relaciones entre el número de shows, rankings e ingresos ajustados a la inflación.
 
 ---
 **Autor:** Frank Yesid
