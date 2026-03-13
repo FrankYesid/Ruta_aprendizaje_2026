@@ -205,16 +205,41 @@ Práctica competitiva con datasets curados para resolver problemas específicos 
 
 ## 6. Integración con el Mundo Real
 ### Objetivo
-Implementar soluciones de ciencia de datos en entornos de producción y evaluar su impacto.
+Implementar soluciones de ciencia de datos en entornos de producción y evaluar su impacto social y económico.
 
 ### Proyectos
-- **[Proyecto 1: Detección de fraude financiero](./06-integracion_con_el_mundo_real/proyecto_1)** - Identificación de actividades sospechosas en transacciones.
-- **[Proyecto 2: Pronóstico del clima local](./06-integracion_con_el_mundo_real/proyecto_2)** - Modelos específicos para predicción meteorológica.
-- **[Proyecto 3: Análisis de impacto ambiental](./06-integracion_con_el_mundo_real/proyecto_3)** - Evaluación de proyectos usando datos satelitales.
-- **[Proyecto 4: Optimización de cultivos](./06-integracion_con_el_mundo_real/proyecto_4)** - Predicción de rendimientos agrícolas según datos climáticos.
-- **[Proyecto 5: Monitorización de transporte público](./06-integracion_con_el_mundo_real/proyecto_5)** - Optimización de horarios y rutas mediante análisis de datos.
 
-📁 [Ver carpeta completa de Integración con el Mundo Real](./06-integracion_con_el_mundo_real)
+#### [Proyecto 1: Detección de Fraude Financiero](./06-Integración_con_el_Mundo_Real/Proyecto_1)
+Identificación de patrones sospechosos en transacciones para prevenir fraudes en tiempo real.
+- **Técnicas:** Detección de Anomalías, Isolation Forest, Redes Neuronales.
+- **Dataset:** Registros de transacciones financieras anonimizadas.
+- **Objetivo:** Minimizar pérdidas económicas mediante la detección temprana de actividades ilícitas.
+
+#### [Proyecto 2: Pronóstico del Clima Local](./06-Integración_con_el_Mundo_Real/Proyecto_2)
+Desarrollo de modelos meteorológicos precisos para predicciones a corto plazo en regiones específicas.
+- **Técnicas:** LSTM, Prophet, Análisis de Series Temporales Atmosféricas.
+- **Dataset:** Datos históricos de estaciones climáticas locales.
+- **Objetivo:** Proporcionar alertas tempranas y facilitar la planificación en sectores como la agricultura y el turismo.
+
+#### [Proyecto 3: Análisis de Impacto Ambiental](./06-Integración_con_el_Mundo_Real/Proyecto_3)
+Evaluación de cambios en el ecosistema utilizando datos satelitales y sensores remotos.
+- **Técnicas:** Procesamiento de Imágenes Satelitales, NDVI, Análisis Geoespacial.
+- **Dataset:** Imágenes de satélite (Landsat/Sentinel) y datos de sensores de campo.
+- **Objetivo:** Monitorizar la deforestación y el estado de salud de reservas naturales.
+
+#### [Proyecto 4: Optimización de Cultivos](./06-Integración_con_el_Mundo_Real/Proyecto_4)
+Predicción de rendimientos agrícolas basada en condiciones climáticas y variables del suelo.
+- **Técnicas:** Regresión Avanzada, Modelos de Optimización, IoT Data.
+- **Dataset:** Variables climáticas, de suelo y rendimientos históricos.
+- **Objetivo:** Mejorar la productividad agrícola y optimizar el uso de recursos como agua y fertilizantes.
+
+#### [Proyecto 5: Monitorización de Transporte Público](./06-Integración_con_el_Mundo_Real/Proyecto_5)
+Análisis de flujos de pasajeros para optimizar rutas y horarios en sistemas de transporte urbano.
+- **Técnicas:** Análisis de Grafos, Simulación de Tráfico, Optimización de Rutas.
+- **Dataset:** Datos de GPS de buses y registros de tarjetas de transporte.
+- **Objetivo:** Reducir tiempos de espera y mejorar la eficiencia del sistema de movilidad.
+
+📁 [Ver carpeta completa de Integración con el Mundo Real](./06-Integración_con_el_Mundo_Real)
 
 ---
 
