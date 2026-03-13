@@ -149,32 +149,55 @@ Pronóstico de precios de activos financieros utilizando series de tiempo multiv
 - **Características clave:** AAPL, GOOGL, MSFT, AMZN, JPM (lags t-0 a t-29), target.
 - **Objetivo:** Desarrollar modelos robustos de forecasting para predecir el comportamiento futuro de activos financieros basados en dependencias temporales.
 
-#### [Proyecto 4: Análisis de Texto Jurídico](./04-Analisis_Avanzado/Proyecto_4)
-Aplicación de NLP avanzado para entender, procesar y clasificar documentos legales. Se realiza extracción de entidades, análisis de relaciones y clasificación automática de textos jurídicos.
-- **Técnicas:** Reconocimiento de Entidades Nombradas (NER), Clasificación de Documentos, Extracción de Información, Análisis de Similitud.
-- **Herramientas:** SpaCy, NLTK, Modelos de lenguaje.
-- **Objetivo:** Automatizar análisis de documentos legales, extraer información clave y clasificar tipos de documentos para agilizar procesos jurídicos.
+#### [Proyecto 4: Análisis de Texto Jurídico (EUR-Lex)](./04-Analisis_Avanzado/Proyecto_4)
+Aplicación de NLP avanzado para entender, procesar y extraer información de documentos legales a gran escala utilizando el corpus de la Unión Europea.
+- **Técnicas:** NER (Reconocimiento de Entidades), Clasificación de Texto, Modelado de Tópicos (LDA), Búsqueda Semántica con Embeddings.
+- **Dataset:** [EurlexResources (Hugging Face)](https://huggingface.co/datasets/joelniklaus/eurlex_resources) - Corpus masivo de jurisprudencia y directivas de la UE.
+- **Objetivo:** Automatizar el análisis de documentos legales, extraer entidades clave (personas, organizaciones) y permitir búsquedas semánticas eficientes.
 
 #### [Proyecto 5: Segmentación de Clientes](./04-Analisis_Avanzado/Proyecto_5)
-Agrupamiento de consumidores mediante algoritmos de clustering avanzados (K-means, Clustering Jerárquico, DBSCAN) para identificar segmentos de clientes con características similares.
-- **Técnicas:** K-means, Clustering Jerárquico, DBSCAN, Análisis de Validación, Interpretación de Clusters.
-- **Objetivo:** Identificar segmentos de clientes homogéneos para estrategias de marketing personalizadas, optimización de recursos y análisis del comportamiento del consumidor.
+Agrupamiento de consumidores mediante algoritmos de clustering para identificar segmentos de mercado con comportamientos y características similares.
+- **Técnicas:** K-means, Clustering Jerárquico, DBSCAN, Análisis de Silueta, PCA para reducción de dimensionalidad.
+- **Dataset:** Datos de comportamiento de compra y demografía de clientes.
+- **Objetivo:** Identificar grupos de clientes homogéneos para optimizar estrategias de marketing personalizadas y mejorar la retención.
 
 📁 [Ver carpeta completa de Análisis Avanzado](./04-Analisis_Avanzado)
 
 ---
 
 ## 5. Proyectos Educativos
-# pendiente este segmento
 ### Objetivo
-Desarrollar habilidades prácticas y fomentar el aprendizaje interactivo en ciencia de datos.
+Desarrollar habilidades prácticas y fomentar el aprendizaje interactivo en ciencia de datos a través de retos y simulaciones guiadas.
 
 ### Proyectos
-- **[Proyecto 1: Simulación de pandemias](./05-proyectos_educativos/proyecto_1)** - Modelos matemáticos para entender la propagación de enfermedades.
-- **[Proyecto 2: Mini bootcamps](./05-proyectos_educativos/proyecto_2)** - Retos semanales para resolver problemas como limpieza de datos.
-- **[Proyecto 3: Dashboards educativos](./05-proyectos_educativos/proyecto_3)** - Visualizaciones intuitivas de modelos de ML.
-- **[Proyecto 4: Machine Learning explicable (XAI)](./05-proyectos_educativos/proyecto_4)** - Interpretación de modelos complejos.
-- **[Proyecto 5: Juegos de datos](./05-proyectos_educativos/proyecto_5)** - Concursos tipo Kaggle con datasets específicos.
+
+#### [Proyecto 1: Simulación de Pandemias (Modelo SIR)](./05-proyectos_educativos/proyecto_1)
+Estudio de la dinámica de propagación de enfermedades infecciosas utilizando modelos matemáticos aplicados a datos reales de COVID-19.
+- **Técnicas:** Modelo SIR, Ecuaciones Diferenciales (odeint), Optimización de Parámetros (minimize), Análisis de Series Temporales.
+- **Dataset:** [Johns Hopkins COVID-19 Data (GitHub)](https://github.com/CSSEGISandData/COVID-19) - Series mundiales diarias (2020-2023).
+- **Objetivo:** Simular brotes epidémicos y ajustar parámetros teóricos ($\beta$, $\gamma$, $R_0$) a picos de contagio reales.
+
+#### [Proyecto 2: Retos de Limpieza de Datos](./05-proyectos_educativos/proyecto_2)
+Mini bootcamp enfocado en el diagnóstico y corrección de problemas de calidad en datasets "sucios" del mundo real.
+- **Técnicas:** Expresiones Regulares (Regex), Normalización de formatos, Tratamiento de Nulos, Visualización de Calidad.
+- **Dataset:** [Dirty Dataset for Data Cleaning (Kaggle)](https://www.kaggle.com/datasets/amruthayenikonda/dirty-dataset-to-practice-data-cleaning) - Giras musicales con múltiples inconsistencias.
+- **Objetivo:** Transformar datos ruidosos en un dataset estructurado y confiable para el análisis estadístico.
+
+#### [Proyecto 3: Visualización de Modelos de ML](./05-proyectos_educativos/proyecto_3)
+Interpretación intuitiva de resultados de Machine Learning mediante técnicas de visualización diagnóstica para modelos de regresión y clasificación.
+- **Técnicas:** Análisis de Residuos, Matrices de Confusión térmicas, Curvas ROC/AUC, Gráficos de dispersión Predicho vs Real.
+- **Dataset:** Housing Prices (Regresión) y Amazon Products (Clasificación).
+- **Objetivo:** Comunicar el rendimiento y los errores de los modelos de forma clara para facilitar la toma de decisiones técnicas.
+
+#### [Proyecto 4: Machine Learning explicable (XAI)](./05-proyectos_educativos/proyecto_4)
+Interpretación de modelos complejos mediante técnicas que permiten explicar por qué un modelo toma ciertas decisiones.
+- **Técnicas:** SHAP, LIME, Feature Importance, Gráficos de dependencia.
+- **Objetivo:** Abrir la "caja negra" de modelos avanzados para garantizar transparencia y confianza en las predicciones.
+
+#### [Proyecto 5: Juegos de Datos y Competiciones](./05-proyectos_educativos/proyecto_5)
+Práctica competitiva con datasets curados para resolver problemas específicos bajo métricas de evaluación estándar.
+- **Técnicas:** Pipelines de ML, Validación Cruzada, Selección de Modelos.
+- **Objetivo:** Fomentar la creatividad y el rigor técnico en la resolución de problemas de ciencia de datos.
 
 📁 [Ver carpeta completa de Proyectos Educativos](./05-proyectos_educativos)
 
