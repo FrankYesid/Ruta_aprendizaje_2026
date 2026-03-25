@@ -89,34 +89,34 @@ Resolver problemas específicos mediante la implementación de modelos predictiv
 ### Proyectos
 
 #### [Proyecto 1: Predicción de Enfermedades](./03-aplicación_de_modelos/proyecto_1)
-Utilización de datos de salud para predecir condiciones médicas como diabetes o enfermedades cardíacas.
-- **Técnicas:** Regresión logística, Random Forest, Redes Neuronales.
-- **Dataset:** Datos de salud públicos con variables clínicas y de estilo de vida.
-- **Objetivo:** Desarrollar un modelo que permita anticipar el riesgo de enfermedades.
+Análisis preventivo utilizando datos clínicos para predecir condiciones médicas como diabetes o enfermedades cardiovasculares mediante modelos de clasificación.
+- **Técnicas:** Regresión logística, Random Forest, Redes Neuronales, Análisis de importancia.
+- **Dataset:** [CVD Cleaned (Kaggle)](file:///d:/GitHub/Ruta_aprendizaje_2024/03-aplicación_de_modelos/proyecto_1/data/CVD_cleaned.csv) - Datos de salud con variables clínicas y estilo de vida.
+- **Objetivo:** Desarrollar un modelo robusto que permita anticipar el riesgo de enfermedades crónicas basándose en perfiles de pacientes.
 
 #### [Proyecto 2: Optimización de Rutas de Transporte](./03-aplicación_de_modelos/proyecto_2)
-Algoritmos para mejorar la logística de distribución de mercancías mediante la resolución del problema de rutas de vehículos (VRP).
-- **Técnicas:** OR-Tools (Routing), Algoritmos Genéticos (DEAP), Búsqueda Local.
-- **Dataset:** [Vehicle Routing Problem (VRP) de Kaggle](https://www.kaggle.com/datasets/abhilashg23/vehicle-routing-problem-ga-dataset?resource=download).
-- **Objetivo:** Encontrar las rutas más eficientes para una flota de vehículos minimizando costos y distancias.
+Resolución del problema de rutas de vehículos (VRP) para mejorar la logística de distribución mediante algoritmos de optimización y búsqueda heurística.
+- **Técnicas:** OR-Tools (Routing), Algoritmos Genéticos (DEAP), Búsqueda Local, Metaheurísticas.
+- **Dataset:** [Vehicle Routing Problem (VRP) de Kaggle](file:///d:/GitHub/Ruta_aprendizaje_2024/03-aplicación_de_modelos/proyecto_2/data/VRP.csv).
+- **Objetivo:** Encontrar las rutas más eficientes para una flota de vehículos minimizando costos operativos y distancias recorridas.
 
 #### [Proyecto 3: Sistemas de Recomendación](./03-aplicación_de_modelos/proyecto_3)
-Implementación de motores de recomendación para sugerir contenido relevante basado en el comportamiento histórico del usuario.
+Implementación de motores de recomendación para sugerir contenido personalizado basado en el comportamiento histórico del usuario y similitud de ítems.
 - **Técnicas:** Filtrado colaborativo (SVD, KNN), Filtrado basado en contenido (TF-IDF), Modelos Híbridos.
 - **Dataset:** [MovieLens Latest Datasets (Small & Full)](https://grouplens.org/datasets/movielens/latest/).
-- **Objetivo:** Sugerir películas relevantes a cada usuario según sus preferencias y similitudes con otros usuarios.
+- **Objetivo:** Sugerir películas relevantes a cada usuario según sus preferencias históricas y patrones de consumo de otros usuarios similares.
 
 #### [Proyecto 4: Predicción del Precio de Vivienda](./03-aplicación_de_modelos/proyecto_4)
-Creación de modelos de regresión para estimar el valor comercial de propiedades inmobiliarias basado en múltiples variables.
-- **Técnicas:** Regresión Lineal, Gradient Boosting (XGBoost), Random Forest, SVR.
-- **Dataset:** [Boston Housing Dataset](file:///d:/GitHub/Ruta_aprendizaje_2024/03-Aplicación_de_Modelos/Proyecto_4/data/BostonHousing.csv).
-- **Objetivo:** Proporcionar estimaciones precisas de precios de viviendas para facilitar la toma de decisiones.
+Creación de modelos de regresión avanzados para estimar el valor comercial de propiedades inmobiliarias basado en múltiples variables socioeconómicas y geográficas.
+- **Técnicas:** Regresión Lineal, Gradient Boosting (XGBoost), Random Forest, SVR, Feature Engineering.
+- **Dataset:** [Boston Housing Dataset](file:///d:/GitHub/Ruta_aprendizaje_2024/03-aplicación_de_modelos/proyecto_4/data/BostonHousing.csv).
+- **Objetivo:** Proporcionar estimaciones precisas de precios de viviendas para facilitar la toma de decisiones en el sector inmobiliario.
 
 #### [Proyecto 5: Clasificación de Residuos](./03-aplicación_de_modelos/proyecto_5)
-Implementación de modelos de Deep Learning para la identificación automática de materiales reciclables mediante imágenes.
-- **Técnicas:** Redes Neuronales Convolucionales (CNN), Transfer Learning (ResNet18).
-- **Dataset:** [Dataset Resized (6 clases)](file:///d:/GitHub/Ruta_aprendizaje_2024/03-Aplicación_de_Modelos/Proyecto_5/data/dataset-resized).
-- **Objetivo:** Automatizar la clasificación de residuos (vidrio, papel, cartón, etc.) para mejorar los procesos de reciclaje.
+Implementación de modelos de Deep Learning para la identificación automática de materiales reciclables mediante visión artificial.
+- **Técnicas:** Redes Neuronales Convolucionales (CNN), Transfer Learning (ResNet18), PyTorch.
+- **Dataset:** [Dataset Resized (6 clases)](file:///d:/GitHub/Ruta_aprendizaje_2024/03-aplicación_de_modelos/proyecto_5/data/dataset-resized).
+- **Objetivo:** Automatizar la clasificación de residuos (vidrio, papel, cartón, etc.) para optimizar los procesos de reciclaje y gestión ambiental.
 
 📁 [Ver carpeta completa de Aplicación de Modelos](./03-aplicación_de_modelos)
 
@@ -156,10 +156,10 @@ Aplicación de NLP avanzado para entender, procesar y extraer información de do
 - **Objetivo:** Automatizar el análisis de documentos legales, extraer entidades clave (personas, organizaciones) y permitir búsquedas semánticas eficientes.
 
 #### [Proyecto 5: Segmentación de Clientes](./04-Analisis_Avanzado/Proyecto_5)
-Agrupamiento de consumidores mediante algoritmos de clustering para identificar segmentos de mercado con comportamientos y características similares.
-- **Técnicas:** K-means, Clustering Jerárquico, DBSCAN, Análisis de Silueta, PCA para reducción de dimensionalidad.
-- **Dataset:** Datos de comportamiento de compra y demografía de clientes.
-- **Objetivo:** Identificar grupos de clientes homogéneos para optimizar estrategias de marketing personalizadas y mejorar la retención.
+Agrupamiento de consumidores mediante algoritmos de clustering avanzado para identificar segmentos de mercado mayoristas con comportamientos de compra similares.
+- **Técnicas:** K-means, Clustering Jerárquico, DBSCAN, Análisis de Silueta, PCA, Estandarización de datos.
+- **Dataset:** [Wholesale Customers Dataset (UCI)](file:///d:/GitHub/Ruta_aprendizaje_2024/04-Analisis_Avanzado/Proyecto_5/data/Wholesale%20customers%20data.csv) - 440 registros de clientes mayoristas.
+- **Objetivo:** Identificar grupos de clientes homogéneos para optimizar la cadena de suministro y diseñar estrategias de marketing personalizadas.
 
 📁 [Ver carpeta completa de Análisis Avanzado](./04-Analisis_Avanzado)
 
@@ -180,24 +180,25 @@ Estudio de la dinámica de propagación de enfermedades infecciosas utilizando m
 #### [Proyecto 2: Retos de Limpieza de Datos](./05-proyectos_educativos/proyecto_2)
 Mini bootcamp enfocado en el diagnóstico y corrección de problemas de calidad en datasets "sucios" del mundo real.
 - **Técnicas:** Expresiones Regulares (Regex), Normalización de formatos, Tratamiento de Nulos, Visualización de Calidad.
-- **Dataset:** [Dirty Dataset for Data Cleaning (Kaggle)](https://www.kaggle.com/datasets/amruthayenikonda/dirty-dataset-to-practice-data-cleaning) - Giras musicales con múltiples inconsistencias.
+- **Dataset:** [Dirty Dataset for Data Cleaning (Kaggle)](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_2/data/my_file%20(1).csv) - Giras musicales con múltiples inconsistencias.
 - **Objetivo:** Transformar datos ruidosos en un dataset estructurado y confiable para el análisis estadístico.
 
 #### [Proyecto 3: Visualización de Modelos de ML](./05-proyectos_educativos/proyecto_3)
 Interpretación intuitiva de resultados de Machine Learning mediante técnicas de visualización diagnóstica para modelos de regresión y clasificación.
 - **Técnicas:** Análisis de Residuos, Matrices de Confusión térmicas, Curvas ROC/AUC, Gráficos de dispersión Predicho vs Real.
-- **Dataset:** Housing Prices (Regresión) y Amazon Products (Clasificación).
+- **Dataset:** [Housing Prices](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_3/data/Housing.csv) y [Amazon Products](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_3/data/amazon.csv).
 - **Objetivo:** Comunicar el rendimiento y los errores de los modelos de forma clara para facilitar la toma de decisiones técnicas.
 
 #### [Proyecto 4: Machine Learning explicable (XAI)](./05-proyectos_educativos/proyecto_4)
-Interpretación de modelos complejos mediante técnicas que permiten explicar por qué un modelo toma ciertas decisiones.
-- **Técnicas:** SHAP, LIME, Feature Importance, Gráficos de dependencia.
-- **Objetivo:** Abrir la "caja negra" de modelos avanzados para garantizar transparencia y confianza en las predicciones.
+Interpretación de modelos de "caja negra" mediante técnicas que permiten explicar el porqué de las predicciones individuales y globales.
+- **Técnicas:** SHAP (Waterfall, Force, Summary plots), LIME, Feature Importance, Gráficos de dependencia.
+- **Dataset:** [Boston Housing Dataset](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_4/data/BostonHousing.csv).
+- **Objetivo:** Abrir la "caja negra" de modelos complejos para garantizar transparencia, ética y confianza en las predicciones.
 
 #### [Proyecto 5: Juegos de Datos y Competiciones](./05-proyectos_educativos/proyecto_5)
-Práctica competitiva con datasets curados para resolver problemas específicos bajo métricas de evaluación estándar.
-- **Técnicas:** Pipelines de ML, Validación Cruzada, Selección de Modelos.
-- **Objetivo:** Fomentar la creatividad y el rigor técnico en la resolución de problemas de ciencia de datos.
+Práctica competitiva con datasets curados para resolver problemas específicos bajo métricas de evaluación estándar y rigor técnico.
+- **Técnicas:** Pipelines de ML, Validación Cruzada, Selección de Modelos, Tuning de hiperparámetros.
+- **Objetivo:** Fomentar la creatividad y el rigor técnico en la resolución de problemas reales de ciencia de datos.
 
 📁 [Ver carpeta completa de Proyectos Educativos](./05-proyectos_educativos)
 
