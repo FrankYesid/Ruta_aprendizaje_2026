@@ -195,10 +195,11 @@ Interpretación de modelos de "caja negra" mediante técnicas que permiten expli
 - **Dataset:** [Boston Housing Dataset](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_4/data/BostonHousing.csv).
 - **Objetivo:** Abrir la "caja negra" de modelos complejos para garantizar transparencia, ética y confianza en las predicciones.
 
-#### [Proyecto 5: Juegos de Datos y Competiciones](./05-proyectos_educativos/proyecto_5)
-Práctica competitiva con datasets curados para resolver problemas específicos bajo métricas de evaluación estándar y rigor técnico.
-- **Técnicas:** Pipelines de ML, Validación Cruzada, Selección de Modelos, Tuning de hiperparámetros.
-- **Objetivo:** Fomentar la creatividad y el rigor técnico en la resolución de problemas reales de ciencia de datos.
+#### [Proyecto 5: Spaceship Titanic - Competición de Kaggle](./05-proyectos_educativos/proyecto_5)
+Resolución de una competición de clasificación binaria para predecir el transporte de pasajeros a otra dimensión mediante modelos avanzados.
+- **Técnicas:** XGBoost, Imputación de nulos, Ingeniería de características (Cabin split), Despliegue con Streamlit.
+- **Dataset:** [Spaceship Titanic (Kaggle)](file:///d:/GitHub/Ruta_aprendizaje_2024/05-proyectos_educativos/proyecto_5/data/train.csv).
+- **Objetivo:** Alcanzar una alta precisión en la predicción de supervivencia interestelar y desplegar una aplicación web interactiva para visualizar el modelo.
 
 📁 [Ver carpeta completa de Proyectos Educativos](./05-proyectos_educativos)
 
