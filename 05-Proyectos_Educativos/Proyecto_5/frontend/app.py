@@ -17,7 +17,10 @@ st.markdown("""
 # Carga del modelo
 @st.cache_resource
 def load_model():
-    model_path = os.path.join("..", "models", "spaceship_titanic_model.pkl")
+    # Obtener la ruta absoluta del directorio donde se encuentra este script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Subir un nivel para llegar a Proyecto_5 y luego entrar a models
+    model_path = os.path.join(script_dir, "..", "models", "spaceship_titanic_model.pkl")
     return joblib.load(model_path)
 
 try:

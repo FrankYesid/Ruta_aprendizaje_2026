@@ -7,6 +7,8 @@ Este proyecto se basa en la popular competición de Kaggle **"Spaceship Titanic"
 ### Escenario
 Año 2912. Una nave espacial que transportaba emigrantes a exoplanetas recién habitables sufrió un accidente. Casi la mitad de los pasajeros fueron transportados a otra dimensión. Tu misión es ayudar a los equipos de rescate prediciendo quiénes fueron los afectados.
 
+![Vista Previa de la Aplicación](./docs/img/spaceship_titanic_app.png)
+
 ---
 
 ## 📁 Estructura del Proyecto
@@ -16,6 +18,7 @@ Proyecto_5/
 ├── README.md                                    # Este archivo
 ├── data/                                        # Conjuntos de datos (train, test)
 ├── docs/                                        # Documentación detallada
+│   ├── img/                                     # Imágenes del proyecto
 │   ├── competicion.md                           # Resumen de la competición
 │   └── diccionario_datos.md                     # Significado de las variables
 ├── notebooks/                                   # Análisis y Modelado
