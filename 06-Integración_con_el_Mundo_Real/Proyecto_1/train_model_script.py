@@ -1,23 +1,37 @@
-import pandas as pd
-import numpy as np
-import joblib
-from sklearn.model_selection import train_test_split
+import os
+import sys
+
+print("Iniciando script...")
+try:
+    import pandas as pd
+    print("Pandas importado")
+    import numpy as np
+    print("Numpy importado")
+    import joblib
+    print("Joblib importado")
+    from sklearn.model_selection import train_test_split
+    print("Sklearn importado")
+except Exception as e:
+    print(f"Error al importar: {e}")
+    sys.exit(1)
+
+data_path = "data/financial_fraud_detection_dataset.csv"
+if os.path.exists(data_path):
+    print(f"Archivo de datos encontrado: {data_path}")
+else:
+    print(f"Archivo NO encontrado: {data_path}")
+    sys.exit(1)
+
+df = pd.read_csv(data_path)
+print(f"Datos cargados: {df.shape}")
+
+# ... resto del código simplificado
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
-import os
 
-# Configuración
-base_path = r"d:\GitHub\Ruta_aprendizaje_2024\06-Integración_con_el_Mundo_Real\Proyecto_1"
-data_path = os.path.join(base_path, "data", "financial_fraud_detection_dataset.csv")
-model_path = os.path.join(base_path, "model", "fraud_model.joblib")
-
-# Carga de datos
-df = pd.read_csv(data_path)
-
-# Selección de características
 features = ['amount', 'transaction_type', 'merchant_category', 'device_used', 
             'spending_deviation_score', 'velocity_score', 'geo_anomaly_score', 'payment_channel']
 target = 'is_fraud'
@@ -25,37 +39,15 @@ target = 'is_fraud'
 X = df[features]
 y = df[target].astype(int)
 
-# Preprocesamiento
-numeric_features = ['amount', 'spending_deviation_score', 'velocity_score', 'geo_anomaly_score']
-categorical_features = ['transaction_type', 'merchant_category', 'device_used', 'payment_channel']
-
-numeric_transformer = Pipeline(steps=[
-    ('imputer', SimpleImputer(strategy='median')),
-    ('scaler', StandardScaler())
-])
-
-categorical_transformer = Pipeline(steps=[
-    ('imputer', SimpleImputer(strategy='most_frequent')),
-    ('onehot', OneHotEncoder(handle_unknown='ignore'))
-])
-
 preprocessor = ColumnTransformer(
     transformers=[
-        ('num', numeric_transformer, numeric_features),
-        ('cat', categorical_transformer, categorical_features)
+        ('num', StandardScaler(), ['amount', 'spending_deviation_score', 'velocity_score', 'geo_anomaly_score']),
+        ('cat', OneHotEncoder(handle_unknown='ignore'), ['transaction_type', 'merchant_category', 'device_used', 'payment_channel'])
     ])
 
-# Pipeline completo
-model_pipeline = Pipeline(steps=[
-    ('preprocessor', preprocessor),
-    ('classifier', RandomForestClassifier(n_estimators=50, random_state=42, class_weight='balanced'))
-])
-
-# Entrenamiento rápido (puedes ajustar n_estimators)
-print("Entrenando modelo...")
-model_pipeline.fit(X, y)
-
-# Guardar
-os.makedirs(os.path.dirname(model_path), exist_ok=True)
-joblib.dump(model_pipeline, model_path)
-print(f"Modelo guardado en: {model_path}")
+model = Pipeline(steps=[('pre', preprocessor), ('clf', RandomForestClassifier(n_estimators=10, random_state=42))])
+print("Entrenando...")
+model.fit(X, y)
+print("Guardando...")
+joblib.dump(model, "model/fraud_model.joblib")
+print("Listo.")
