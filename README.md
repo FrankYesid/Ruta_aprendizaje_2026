@@ -261,7 +261,7 @@ Análisis de flujos de pasajeros para optimizar rutas y horarios en sistemas de 
 - **Visualización**: Plotly, Tableau, Matplotlib, Seaborn.
 - **Modelado**: Scikit-learn, TensorFlow, PyTorch, OR-Tools, DEAP.
 - **Preprocesamiento**: Pandas, NumPy, NLTK, SpaCy.
-- **Herramientas**: Jupyter Notebooks, Streamlit, Dash, Power BI.
+- **Herramientas**: Jupyter Notebooks, Streamlit y Dash.
 
 ---
 
