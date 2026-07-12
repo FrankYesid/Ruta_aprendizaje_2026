@@ -212,34 +212,35 @@ Implementar soluciones de ciencia de datos en entornos de producción y evaluar 
 ### Proyectos
 
 #### [Proyecto 1: Detección de Fraude Financiero](./06-Integración_con_el_Mundo_Real/Proyecto_1)
-Identificación de patrones sospechosos en transacciones para prevenir fraudes en tiempo real.
-- **Técnicas:** Detección de Anomalías, Isolation Forest, Redes Neuronales.
-- **Dataset:** Registros de transacciones financieras anonimizadas.
-- **Objetivo:** Minimizar pérdidas económicas mediante la detección temprana de actividades ilícitas.
+Aplicación inicial de análisis de datos y modelado para identificar actividades sospechosas en transacciones financieras.
+- **Técnicas:** Exploración de datos, modelado supervisado y entrenamiento reproducible.
+- **Avance actual:** se cuenta con datos, notebooks de EDA y entrenamiento, además de un script para entrenar un modelo guardado en [06-Integración_con_el_Mundo_Real/Proyecto_1/model/fraud_model.joblib](./06-Integración_con_el_Mundo_Real/Proyecto_1/model/fraud_model.joblib).
+- **Objetivo:** fortalecer la detección temprana de fraudes y mejorar la capacidad de clasificación.
 
 #### [Proyecto 2: Pronóstico del Clima Local](./06-Integración_con_el_Mundo_Real/Proyecto_2)
-Desarrollo de modelos meteorológicos precisos para predicciones a corto plazo en regiones específicas.
-- **Técnicas:** LSTM, Prophet, Análisis de Series Temporales Atmosféricas.
-- **Dataset:** Datos históricos de estaciones climáticas locales.
-- **Objetivo:** Proporcionar alertas tempranas y facilitar la planificación en sectores como la agricultura y el turismo.
+Desarrollo de modelos meteorológicos para predicciones a corto plazo y análisis de series temporales climáticas.
+- **Técnicas:** EDA, feature engineering, clasificación y forecasting con LSTM.
+- **Avance actual:** se han desarrollado notebooks para carga, análisis exploratorio, ingeniería de variables y pronóstico.
+- **Objetivo:** construir modelos útiles para alertas tempranas y toma de decisiones en contextos locales.
 
 #### [Proyecto 3: Análisis de Impacto Ambiental](./06-Integración_con_el_Mundo_Real/Proyecto_3)
-Evaluación de cambios en el ecosistema utilizando datos satelitales y sensores remotos.
-- **Técnicas:** Procesamiento de Imágenes Satelitales, NDVI, Análisis Geoespacial.
-- **Dataset:** Imágenes de satélite (Landsat/Sentinel) y datos de sensores de campo.
-- **Objetivo:** Monitorizar la deforestación y el estado de salud de reservas naturales.
+Análisis de datos ambientales con enfoque en calidad del aire y su relación con la salud pública.
+- **Técnicas:** exploración, preprocesamiento y modelado con interpretabilidad mediante SHAP.
+- **Fuente:** [WHO Air Quality Database](https://www.who.int/data/gho/data/themes/air-pollution/who-air-quality-database).
+- **Avance actual:** se tienen notebooks de exploración, preprocesamiento y modelado con hiperparámetros.
+- **Objetivo:** extraer insights útiles sobre la calidad del aire y sus factores asociados.
 
 #### [Proyecto 4: Optimización de Cultivos](./06-Integración_con_el_Mundo_Real/Proyecto_4)
-Predicción de rendimientos agrícolas basada en condiciones climáticas y variables del suelo.
-- **Técnicas:** Regresión Avanzada, Modelos de Optimización, IoT Data.
-- **Dataset:** Variables climáticas, de suelo y rendimientos históricos.
-- **Objetivo:** Mejorar la productividad agrícola y optimizar el uso de recursos como agua y fertilizantes.
+Propuesta para predecir rendimientos agrícolas y apoyar decisiones de manejo en entornos productivos.
+- **Técnicas:** análisis de datos agrícolas, modelado predictivo y evaluación de variables climáticas y del suelo.
+- **Avance actual:** se estableció la estructura base del proyecto con carpeta para datos y análisis.
+- **Objetivo:** mejorar la productividad agrícola mediante decisiones más informadas.
 
 #### [Proyecto 5: Monitorización de Transporte Público](./06-Integración_con_el_Mundo_Real/Proyecto_5)
-Análisis de flujos de pasajeros para optimizar rutas y horarios en sistemas de transporte urbano.
-- **Técnicas:** Análisis de Grafos, Simulación de Tráfico, Optimización de Rutas.
-- **Dataset:** Datos de GPS de buses y registros de tarjetas de transporte.
-- **Objetivo:** Reducir tiempos de espera y mejorar la eficiencia del sistema de movilidad.
+Análisis de movilidad urbana para optimizar rutas, horarios y operación de sistemas de transporte.
+- **Técnicas:** análisis exploratorio de datos, visualización y propuestas de optimización.
+- **Avance actual:** se organizó la estructura inicial del proyecto para trabajos posteriores de EDA y modelado.
+- **Objetivo:** mejorar la eficiencia del transporte y la experiencia de los usuarios.
 
 📁 [Ver carpeta completa de Integración con el Mundo Real](./06-Integración_con_el_Mundo_Real)
 

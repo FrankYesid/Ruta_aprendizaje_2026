@@ -2,16 +2,17 @@
 
 ## Descripción
 
-Predicción de rendimientos y optimización agronómica según datos climáticos y de suelo. Este contenido se organizará posteriormente.
+Este proyecto tiene como propósito explorar modelos predictivos para estimar rendimientos agrícolas y apoyar decisiones relacionadas con el uso de recursos en el campo. Se plantea trabajar con variables climáticas, de suelo y producción histórica.
 
-## Estructura Sugerida
+## Avances realizados
 
-```
-Proyecto_4/
-├── data/          # Datos agrícolas, clima, suelo
-├── notebooks/     # EDA, modelos predictivos
-└── README.md
-```
+- Se definió la estructura base del proyecto y la organización de carpetas para datos y análisis.
+- Se preparó el espacio para incorporar notebooks de exploración, limpieza y modelado predictivo.
+
+## Estructura del proyecto
+
+- [data/](./data): datos agrícolas y ambientales.
+- [notebook/](./notebook): espacio para análisis y modelos.
 
 ## Requerimientos
 
