@@ -1,10 +1,10 @@
-    # An?lisis Avanzado
+    # Análisis Avanzado
 
-    Esta secci?n re?ne proyectos relacionados con series temporales, NLP, clustering y t?cnicas de alto nivel..
+    Esta sección reúne proyectos relacionados con series temporales, NLP, clustering y técnicas de alto nivel..
 
     ## Objetivo
 
-    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea f?cil de revisar y extender.
+    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea fácil de revisar y extender.
 
     ## Proyectos incluidos
 
@@ -14,10 +14,10 @@
 - [Proyecto_4](Proyecto_4)
 - [Proyecto_5](Proyecto_5)
 
-    ## Estructura t?pica
+    ## Estructura típica
 
     - [data/](./data) o subcarpetas con datos locales
-    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para an?lisis y scripts
+    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para análisis y scripts
     - [models/](./models) para artefactos entrenados
     - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
 
@@ -25,7 +25,7 @@
 
     ```mermaid
     flowchart TD
-        A[Datos] --> B[An?lisis]
+        A[Datos] --> B[Análisis]
         B --> C[Modelado]
         C --> D[Reportes y artefactos]
     ```

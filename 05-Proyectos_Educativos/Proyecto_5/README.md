@@ -1,26 +1,19 @@
-        # Spaceship Titanic
+# Spaceship Titanic
 
-        Este proyecto forma parte de la secci?n **Proyectos Educativos** y est? pensado para mostrar un flujo completo de trabajo: desde los datos hasta los resultados finales.
+Este proyecto recrea una tarea de clasificación binaria inspirada en la competencia de Kaggle Spaceship Titanic.
 
-        ## Objetivo
+## Objetivo
 
-        Explorar, procesar y comunicar los hallazgos del problema abordado, utilizando notebooks, scripts y artefactos que permitan reproducir el an?lisis.
+Entrenar un modelo predictivo para identificar pasajeros transportados a otra dimensión y preparar una app interactiva de ejemplo.
 
-        ## Qu? encontrar?s aqu?
+## Recursos principales
 
-        - [data/](./data): datos de entrada y recursos del proyecto
-- [notebooks/](./notebooks): cuadernos de trabajo y experimentaci?n
-- [models/](./models): artefactos entrenados y m?tricas
-- [documents/](./documents), [docs/](./docs) o [html/](./html): reportes y visualizaciones
+- [data/](./data): datos de entrenamiento y prueba.
+- [notebooks/](./notebooks): cuadernos para exploración y modelado.
+- [frontend/](./frontend): aplicación Streamlit para visualizar resultados.
+- [models/](./models): artefactos del modelo entrenado.
 
-        ## Ruta recomendada de revisi?n
+## Enlaces relacionados
 
-        1. Revisar la carpeta de datos para entender el contexto del problema.
-        2. Abrir los notebooks o scripts para seguir la l?gica del an?lisis.
-        3. Verificar los resultados en reportes, m?tricas o modelos entrenados.
-        4. Comparar el proyecto con otros de la misma secci?n para identificar patrones y buenas pr?cticas.
-
-        ## Enlaces relacionados
-
-        - [Proyectos Educativos](../README.md)
-        - [Portafolio principal](../../README.md)
+- [Proyectos Educativos](../README.md)
+- [Portafolio principal](../../README.md)

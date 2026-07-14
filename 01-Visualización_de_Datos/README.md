@@ -1,46 +1,35 @@
-# Visualización de Datos
+    # Visualización de Datos
 
-Este repositorio contiene diversos proyectos enfocados en la visualización de datos, utilizando herramientas como **Plotly, Tableau y Matplotlib**, entre otras. Cada proyecto se basa en un conjunto de datos específico para representar información de manera interactiva y comprensible.
+    Esta sección reúne proyectos relacionados con visualización de datos, storytelling y comunicación de hallazgos..
 
-## Contenido del Repositorio
+    ## Objetivo
 
-### 1. Visualización Interactiva de Cambios Climáticos
-- **Descripción:** Análisis de datos históricos de temperaturas globales para identificar tendencias y variaciones climáticas.
-- **Técnicas utilizadas:** Gráficos de líneas, mapas de calor y dashboards interactivos.
-- **Herramientas:** Python (Plotly, Matplotlib, Seaborn), Tableau.
-- **Datos:** Conjuntos de datos de organismos como NASA o NOAA.
+    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea fácil de revisar y extender.
 
-### 2. Análisis de Tráfico Urbano
-- **Descripción:** Visualización de patrones de tráfico en una ciudad utilizando datos abiertos de movilidad.
-- **Técnicas utilizadas:** Series temporales, mapas de densidad y animaciones de flujo vehicular.
-- **Herramientas:** Python (Folium, Matplotlib, Pandas), Tableau, QGIS.
-- **Datos:** Datos abiertos de movilidad urbana y sensores de tráfico.
+    ## Proyectos incluidos
 
-### 3. Narrativas de Datos (Data Storytelling)
-- **Descripción:** Uso de datos históricos para contar una historia visual impactante. Ejemplo: "La evolución de la pandemia en mi país".
-- **Técnicas utilizadas:** Gráficos de líneas, barras, infografías y dashboards interactivos.
-- **Herramientas:** Power BI, Tableau, Python (Matplotlib, Seaborn).
-- **Datos:** Registros históricos y bases de datos gubernamentales.
+    - [Proyecto_1](Proyecto_1)
+- [Proyecto_2](Proyecto_2)
+- [Proyecto_3](Proyecto_3)
+- [Proyecto_4](Proyecto_4)
+- [Proyecto_5](Proyecto_5)
 
-### 4. Visualización de Desigualdad de Género
-- **Descripción:** Representación visual de brechas de género en ingresos, educación y empleo a nivel global o regional.
-- **Técnicas utilizadas:** Diagramas de dispersión, gráficos de radar y mapas temáticos.
-- **Herramientas:** Python (Seaborn, Plotly), Tableau, Power BI.
-- **Datos:** Informes de organismos como el Banco Mundial o la ONU.
+    ## Estructura típica
 
-### 5. Mapas de Calor en el Deporte
-- **Descripción:** Análisis y visualización de los movimientos de jugadores en un partido usando datos de GPS o coordenadas.
-- **Técnicas utilizadas:** Mapas de calor, trayectorias animadas y diagramas de dispersión.
-- **Herramientas:** Python (Matplotlib, Folium), R (ggplot2), Tableau.
-- **Datos:** Registros de GPS y coordenadas extraídas de partidos deportivos.
+    - [data/](./data) o subcarpetas con datos locales
+    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para análisis y scripts
+    - [models/](./models) para artefactos entrenados
+    - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
 
-## Cómo Usar Este Repositorio
-1. **Clonar el repositorio**
-   ```sh
-   git clone https://github.com/tuusuario/visualizacion-datos.git
-   ```
-2. **Instalar dependencias**
-   ```sh
-   pip install -r requirements.txt
-   ```
----
+    ## Flujo recomendado
+
+    ```mermaid
+    flowchart TD
+        A[Datos] --> B[Análisis]
+        B --> C[Modelado]
+        C --> D[Reportes y artefactos]
+    ```
+
+    ## Enlaces relacionados
+
+    - [Portafolio principal](../README.md)

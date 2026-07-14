@@ -1,21 +1,22 @@
 # Monitorización de Transporte Público
 
-## Descripción
+Este proyecto analiza retrasos y patrones de movilidad en transporte público para apoyar la toma de decisiones operativas y la mejora de la experiencia del usuario.
 
-Este proyecto busca analizar flujos de transporte urbano para mejorar la planificación de rutas y horarios. La idea es trabajar con datos de movilidad y generar insights útiles para optimizar la experiencia del usuario y la eficiencia del sistema.
+## Qué incluye
 
-## Avances realizados
+- [notebook/](./notebook): cuadernos para carga inicial, análisis descriptivo y entrenamiento del modelo.
+- [documents/informe_descriptiva/](./documents/informe_descriptiva): reporte HTML con hallazgos del análisis exploratorio.
+- [models/](./models): modelo serializado y métricas de evaluación guardadas en formato JSON.
+- [data/](./data): conjunto de datos de retrasos de transporte público.
 
-- Se estableció la estructura inicial del proyecto y la organización de datos para análisis.
-- Se preparó el espacio para desarrollar notebooks de EDA, análisis de rutas y modelado de optimización.
+## Flujo del proyecto
 
-## Estructura del proyecto
+1. Carga y revisión inicial del dataset.
+2. Análisis descriptivo y generación de características.
+3. Entrenamiento de un modelo de clasificación.
+4. Guardado del modelo y del informe HTML.
 
-- [data/](./data): datos de movilidad y transporte.
-- [notebook/](./notebook): espacio para análisis exploratorio y propuestas de optimización.
+## Enlaces relacionados
 
-## Requerimientos
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn ortools networkx jupyter
-```
+- [Integración con el Mundo Real](../README.md)
+- [Portafolio principal](../../README.md)
