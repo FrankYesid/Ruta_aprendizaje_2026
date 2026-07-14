@@ -1,35 +1,35 @@
-    # Análisis Avanzado
+# Análisis Avanzado
 
-    Esta sección reúne proyectos relacionados con series temporales, NLP, clustering y técnicas de alto nivel..
+Esta sección reúne proyectos relacionados con series temporales, NLP, clustering y técnicas de alto nivel..
 
-    ## Objetivo
+## Objetivo
 
-    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea fácil de revisar y extender.
+Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea fácil de revisar y extender.
 
-    ## Proyectos incluidos
+## Proyectos incluidos
 
-    - [Proyecto_1](Proyecto_1)
+- [Proyecto_1](Proyecto_1)
 - [Proyecto_2](Proyecto_2)
 - [Proyecto_3](Proyecto_3)
 - [Proyecto_4](Proyecto_4)
 - [Proyecto_5](Proyecto_5)
 
-    ## Estructura típica
+## Estructura típica
 
-    - [data/](./data) o subcarpetas con datos locales
-    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para análisis y scripts
-    - [models/](./models) para artefactos entrenados
-    - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
+- [data/](./data) o subcarpetas con datos locales
+- [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para análisis y scripts
+- [models/](./models) para artefactos entrenados
+- [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
 
-    ## Flujo recomendado
+## Flujo recomendado
 
-    ```mermaid
-    flowchart TD
-        A[Datos] --> B[Análisis]
-        B --> C[Modelado]
-        C --> D[Reportes y artefactos]
-    ```
+```mermaid
+flowchart TD
+A[Datos] --> B[Análisis]
+B --> C[Modelado]
+C --> D[Reportes y artefactos]
+```
 
-    ## Enlaces relacionados
+## Enlaces relacionados
 
-    - [Portafolio principal](../README.md)
+- [Portafolio principal](../README.md)
