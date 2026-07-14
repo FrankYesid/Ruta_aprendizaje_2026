@@ -21,3 +21,4 @@ html/
 *.joblib
 06-Integración_con_el_Mundo_Real/Proyecto_1/models/fraud_model.joblib
 /.git
+temp_update_readmes.py
