@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Informe descriptivo - Public Transport Delays</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+    h1, h2 { color: #1f4e79; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    img { width: 100%; max-width: 700px; border: 1px solid #ddd; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Informe descriptivo - Public Transport Delays</h1>
+  <p>Este informe resume la distribución inicial, los patrones por categoría y la relación de las variables con la variable objetivo delayed.</p>
+
+  <h2>Resumen del dataset</h2>
+  <p><strong>Filas:</strong> 2000<br>
+  <strong>Columnas:</strong> 32<br>
+  <strong>Proporción de retrasos:</strong> 74.95%</p>
+
+  <h2>Estadísticas descriptivas de variables numéricas</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>actual_departure_delay_min</th>
+      <td>8.68800</td>
+      <td>6.268118</td>
+      <td>-2.0</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>actual_arrival_delay_min</th>
+      <td>13.31800</td>
+      <td>9.289727</td>
+      <td>-3.0</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>temperature_C</th>
+      <td>15.12135</td>
+      <td>11.479424</td>
+      <td>-5.0</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>humidity_percent</th>
+      <td>64.71400</td>
+      <td>20.334747</td>
+      <td>30.0</td>
+      <td>99.0</td>
+    </tr>
+    <tr>
+      <th>wind_speed_kmh</th>
+      <td>29.30050</td>
+      <td>17.264015</td>
+      <td>0.0</td>
+      <td>59.0</td>
+    </tr>
+    <tr>
+      <th>precipitation_mm</th>
+      <td>9.86070</td>
+      <td>5.781373</td>
+      <td>0.0</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <th>event_attendance_est</th>
+      <td>6420.25000</td>
+      <td>15198.306129</td>
+      <td>0.0</td>
+      <td>50000.0</td>
+    </tr>
+    <tr>
+      <th>traffic_congestion_index</th>
+      <td>50.24400</td>
+      <td>29.225751</td>
+      <td>0.0</td>
+      <td>99.0</td>
+    </tr>
+  </tbody>
+</table> 
+
+  <h2>Visualizaciones clave</h2>
+  <img src='transport_type_delay.png' alt='Retrasos por tipo de transporte'>
+  <img src='congestion_delay.png' alt='Congestión por estado de retraso'>
+  <img src='weather_delay.png' alt='Probabilidad de retraso por clima'>
+
+  <h2>Observaciones</h2>
+  <ul>
+    <li>La tasa de retraso es alta y el problema muestra un patrón de clasificación útil para entrenamiento.</li>
+    <li>La congestión y las condiciones climáticas parecen influir de forma relevante en la probabilidad de retraso.</li>
+    <li>La presencia de eventos y el tipo de transporte aportan contexto adicional para el modelo.</li>
+  </ul>
+</body>
+</html>
