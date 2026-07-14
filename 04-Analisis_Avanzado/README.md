@@ -1,21 +1,35 @@
-# Análisis Avanzado
+    # An?lisis Avanzado
 
-## Descripción
+    Esta secci?n re?ne proyectos relacionados con series temporales, NLP, clustering y t?cnicas de alto nivel..
 
-Conjunto de proyectos para aplicar técnicas avanzadas de análisis de datos y modelado. Cada carpeta de proyecto incluye datos, notebooks, y un README específico que documenta el flujo, los métodos y los resultados.
+    ## Objetivo
 
-## Proyectos
+    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea f?cil de revisar y extender.
 
-1. **Proyecto_1**: Análisis de redes sociales
-2. **Proyecto_2**: Patrones de consumo energético
-3. **Proyecto_3**: Series temporales
-4. **Proyecto_4**: Análisis de texto jurídico
-5. **[Proyecto_5: Segmentación de clientes](./Proyecto_5/README.md)** – enfoque completo en clustering (K-means, jerárquico, DBSCAN) con validación, perfiles de clientes y recomendaciones de negocio.
+    ## Proyectos incluidos
 
-## Uso general
+    - [Proyecto_1](Proyecto_1)
+- [Proyecto_2](Proyecto_2)
+- [Proyecto_3](Proyecto_3)
+- [Proyecto_4](Proyecto_4)
+- [Proyecto_5](Proyecto_5)
 
-- Consulte el README de cada proyecto para instrucciones detalladas de ejecución.
-- Instale las dependencias definidas en `requirements.txt` dentro de cada subcarpeta.
-- Los notebooks están numerados (01-07) y deben ejecutarse en orden para reproducir el análisis.
+    ## Estructura t?pica
 
-*Próximos pasos*: Añadir nuevos proyectos, actualizar análisis existentes y mantener la documentación actualizada.
+    - [data/](./data) o subcarpetas con datos locales
+    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para an?lisis y scripts
+    - [models/](./models) para artefactos entrenados
+    - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
+
+    ## Flujo recomendado
+
+    ```mermaid
+    flowchart TD
+        A[Datos] --> B[An?lisis]
+        B --> C[Modelado]
+        C --> D[Reportes y artefactos]
+    ```
+
+    ## Enlaces relacionados
+
+    - [Portafolio principal](../README.md)

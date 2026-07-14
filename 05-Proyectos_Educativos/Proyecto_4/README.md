@@ -1,31 +1,25 @@
-# Machine Learning Explicable (XAI)
+        # Machine Learning Explicable (XAI)
 
-## Descripción
+        Este proyecto forma parte de la secci?n **Proyectos Educativos** y est? pensado para mostrar un flujo completo de trabajo: desde los datos hasta los resultados finales.
 
-Este proyecto se centra en la interpretación de modelos de Machine Learning utilizando técnicas de **Explainable AI (XAI)**. A menudo, los modelos potentes como Random Forest actúan como "cajas negras"; aquí aprendemos a abrir esas cajas para entender por qué se toman ciertas decisiones.
+        ## Objetivo
 
-## Técnicas y Herramientas
+        Explorar, procesar y comunicar los hallazgos del problema abordado, utilizando notebooks, scripts y artefactos que permitan reproducir el an?lisis.
 
-- **SHAP (SHapley Additive exPlanations)**: Basado en la teoría de juegos, proporciona una forma consistente de asignar la contribución de cada característica a la predicción final.
-- **LIME (Local Interpretable Model-agnostic Explanations)**: Crea modelos locales aproximados para explicar predicciones individuales.
-- **Feature Importance**: Comparación entre la importancia intrínseca del modelo y las técnicas post-hoc (SHAP/LIME).
-- **Gráficos de Dependencia**: Visualización del impacto marginal de una característica en la predicción.
+        ## Qu? encontrar?s aqu?
 
-## Dataset
+        - [data/](./data): datos de entrada y recursos del proyecto
+- [notebooks/](./notebooks): cuadernos de trabajo y experimentaci?n
+- [models/](./models): artefactos entrenados y m?tricas
 
-- **Boston Housing Dataset**: Datos sobre el valor de las viviendas en Boston, con características como número de habitaciones, tasa de criminalidad, y estatus socioeconómico.
+        ## Ruta recomendada de revisi?n
 
-## Estructura del Proyecto
+        1. Revisar la carpeta de datos para entender el contexto del problema.
+        2. Abrir los notebooks o scripts para seguir la l?gica del an?lisis.
+        3. Verificar los resultados en reportes, m?tricas o modelos entrenados.
+        4. Comparar el proyecto con otros de la misma secci?n para identificar patrones y buenas pr?cticas.
 
-- `01_ingesta_y_eda.ipynb`: Carga de datos y análisis exploratorio inicial.
-- `02_modelado_regresion.ipynb`: Entrenamiento de un Random Forest Regressor y evaluación de métricas base.
-- `03_explicabilidad_shap.ipynb`: Análisis global y local detallado con SHAP (Summary, Waterfall, Force y Dependence plots).
-- `04_explicabilidad_lime.ipynb`: Generación de explicaciones locales con LIME y comparación con SHAP.
+        ## Enlaces relacionados
 
-## Requerimientos
-
-Instalar las librerías necesarias:
-
-```bash
-pip install -r requirements.txt
-```
+        - [Proyectos Educativos](../README.md)
+        - [Portafolio principal](../../README.md)

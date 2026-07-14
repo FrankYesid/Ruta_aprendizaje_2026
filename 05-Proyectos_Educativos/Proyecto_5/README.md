@@ -1,67 +1,26 @@
-# Proyecto 5: Spaceship Titanic - Competición Interestelar
+        # Spaceship Titanic
 
-## 📊 Descripción del Proyecto
+        Este proyecto forma parte de la secci?n **Proyectos Educativos** y est? pensado para mostrar un flujo completo de trabajo: desde los datos hasta los resultados finales.
 
-Este proyecto se basa en la popular competición de Kaggle **"Spaceship Titanic"**. El objetivo es predecir si un pasajero fue transportado a otra dimensión después de que la nave espacial Titanic chocara con una anomalía espacio-temporal.
+        ## Objetivo
 
-### Escenario
-Año 2912. Una nave espacial que transportaba emigrantes a exoplanetas recién habitables sufrió un accidente. Casi la mitad de los pasajeros fueron transportados a otra dimensión. Tu misión es ayudar a los equipos de rescate prediciendo quiénes fueron los afectados.
+        Explorar, procesar y comunicar los hallazgos del problema abordado, utilizando notebooks, scripts y artefactos que permitan reproducir el an?lisis.
 
-![Vista Previa de la Aplicación](./docs/img/spaceship_titanic_app.png)
+        ## Qu? encontrar?s aqu?
 
----
+        - [data/](./data): datos de entrada y recursos del proyecto
+- [notebooks/](./notebooks): cuadernos de trabajo y experimentaci?n
+- [models/](./models): artefactos entrenados y m?tricas
+- [documents/](./documents), [docs/](./docs) o [html/](./html): reportes y visualizaciones
 
-## 📁 Estructura del Proyecto
+        ## Ruta recomendada de revisi?n
 
-```
-Proyecto_5/
-├── README.md                                    # Este archivo
-├── data/                                        # Conjuntos de datos (train, test)
-├── docs/                                        # Documentación detallada
-│   ├── img/                                     # Imágenes del proyecto
-│   ├── competicion.md                           # Resumen de la competición
-│   └── diccionario_datos.md                     # Significado de las variables
-├── notebooks/                                   # Análisis y Modelado
-│   ├── 01_Ingesta_y_EDA.ipynb                   # Exploración de datos
-│   └── 02_Feature_Engineering_y_Modelado.ipynb  # Entrenamiento del modelo
-├── models/                                      # Modelos entrenados (XGBoost)
-├── frontend/                                    # Aplicación Web Interactiva
-│   └── app.py                                   # Streamlit App
-└── requirements.txt                             # Dependencias del proyecto
-```
+        1. Revisar la carpeta de datos para entender el contexto del problema.
+        2. Abrir los notebooks o scripts para seguir la l?gica del an?lisis.
+        3. Verificar los resultados en reportes, m?tricas o modelos entrenados.
+        4. Comparar el proyecto con otros de la misma secci?n para identificar patrones y buenas pr?cticas.
 
----
+        ## Enlaces relacionados
 
-## 🛠️ Tecnologías Utilizadas
-
-- **Análisis de Datos**: Pandas, NumPy.
-- **Visualización**: Matplotlib, Seaborn.
-- **Machine Learning**: Scikit-learn, XGBoost.
-- **Despliegue/Web**: Streamlit.
-- **Documentación**: Markdown.
-
----
-
-## 🚀 Cómo Ejecutar el Proyecto
-
-### 1. Instalación de Dependencias
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Entrenamiento del Modelo
-Ejecuta los notebooks en orden dentro de la carpeta `notebooks/`. El segundo cuaderno generará el archivo `models/spaceship_titanic_model.pkl`.
-
-### 3. Aplicación Web
-Para lanzar la página web dinámica e interactiva:
-```bash
-streamlit run frontend/app.py
-```
-
----
-
-## 🔍 Conclusiones Clave
-
-- El uso de **Criogenia** (`CryoSleep`) es el predictor más fuerte para ser transportado.
-- La **Cubierta** (`Deck`) y el **Planeta de Origen** (`HomePlanet`) también influyen significativamente en las probabilidades de transporte.
-- El modelo **XGBoost** permite alcanzar una precisión cercana al 80% con ingeniería de características básica.
+        - [Proyectos Educativos](../README.md)
+        - [Portafolio principal](../../README.md)

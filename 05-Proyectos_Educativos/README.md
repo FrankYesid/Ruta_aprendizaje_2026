@@ -1,46 +1,35 @@
-# Proyectos Educativos
+    # Proyectos Educativos
 
-## Descripción
+    Esta secci?n re?ne proyectos relacionados con retos pedag?gicos y aplicaciones guiadas para aprender ciencia de datos..
 
-Esta sección está dedicada a proyectos diseñados para el aprendizaje práctico y la experimentación en ciencia de datos. Cada proyecto se enfoca en un área específica, proporcionando datasets, cuadernos guía y retos para desarrollar habilidades clave.
+    ## Objetivo
 
----
+    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea f?cil de revisar y extender.
 
-### 1. [Simulación de Pandemias](./Proyecto_1)
+    ## Proyectos incluidos
 
-- **Objetivo:** Entender la dinámica de propagación de enfermedades infecciosas mediante modelos matemáticos como SIR (Susceptibles, Infectados, Recuperados).
-- **Contenido:**
-  - Cuadernos interactivos para simular brotes.
-  - Visualizaciones de curvas epidémicas.
-  - Análisis de impacto de medidas de control (distanciamiento, vacunación).
+    - [Proyecto_1](Proyecto_1)
+- [Proyecto_2](Proyecto_2)
+- [Proyecto_3](Proyecto_3)
+- [Proyecto_4](Proyecto_4)
+- [Proyecto_5](Proyecto_5)
 
-### 2. [Mini Bootcamps de Retos](./Proyecto_2)
+    ## Estructura t?pica
 
-- **Objetivo:** Resolver problemas prácticos y comunes en el día a día de un científico de datos a través de retos semanales.
-- **Contenido:**
-  - **Reto 1: Limpieza de Datos:** Datasets con valores nulos, duplicados y formatos inconsistentes.
-  - **Reto 2: Feature Engineering:** Creación de nuevas variables a partir de datos existentes.
-  - **Reto 3: Optimización de Modelos:** Ajuste de hiperparámetros y selección de algoritmos.
+    - [data/](./data) o subcarpetas con datos locales
+    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para an?lisis y scripts
+    - [models/](./models) para artefactos entrenados
+    - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
 
-### 3. [Dashboards Educativos Interactivos](./Proyecto_3)
+    ## Flujo recomendado
 
-- **Objetivo:** Aprender los fundamentos de modelos de Machine Learning a través de visualizaciones interactivas.
-- **Contenido:**
-  - Dashboards en Streamlit/Dash para visualizar el funcionamiento de Regresión Lineal, K-Means, y Árboles de Decisión.
-  - Controles para ajustar parámetros y ver su efecto en tiempo real.
+    ```mermaid
+    flowchart TD
+        A[Datos] --> B[An?lisis]
+        B --> C[Modelado]
+        C --> D[Reportes y artefactos]
+    ```
 
-### 4. [Machine Learning Explicable (XAI)](./Proyecto_4)
+    ## Enlaces relacionados
 
-- **Objetivo:** Interpretar y explicar las predicciones de modelos complejos (caja negra) como Gradient Boosting o Redes Neuronales.
-- **Contenido:**
-  - Aplicación de librerías como **SHAP** y **LIME**.
-  - Visualización de la importancia de las características (feature importance).
-  - Análisis de cómo las variables influyen en las decisiones del modelo.
-
-### 5. [Juegos de Datos y Competiciones](./Proyecto_5)
-
-- **Objetivo:** Fomentar la práctica competitiva y la creatividad en la resolución de problemas con datasets específicos.
-- **Contenido:**
-  - Datasets curados para tareas de clasificación, regresión y clustering.
-  - Cuadernos base para iniciar el análisis.
-  - Métricas de evaluación para comparar resultados (similar a un Kaggle interno).
+    - [Portafolio principal](../README.md)

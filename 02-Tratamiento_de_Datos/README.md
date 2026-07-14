@@ -1,49 +1,35 @@
-# Proyectos de Tratamiento de Datos
+    # Tratamiento de Datos
 
-Este repositorio contiene diversos proyectos enfocados en el tratamiento de datos, abarcando desde la limpieza y transformación de información hasta la detección de anomalías y el procesamiento de texto.
+    Esta secci?n re?ne proyectos relacionados con limpieza, estandarizaci?n y preparaci?n de datos crudos..
 
-## 📂 Contenido del Repositorio
+    ## Objetivo
 
-### 1️⃣ Preprocesamiento Automatizado
-**Descripción:** Implementación de un pipeline que automatiza la limpieza y transformación de datos para distintos tipos de datasets.
-**Técnicas utilizadas:** Pandas, NumPy, funciones de normalización y estandarización.
-**Aplicaciones:** Análisis de datos en salud, finanzas y ciencia de datos en general.
+    Organizar el flujo de trabajo desde los datos hasta los resultados para que cada proyecto sea f?cil de revisar y extender.
 
-### 2️⃣ Análisis de Calidad del Agua
-**Descripción:** Limpieza y análisis de datos provenientes de sensores de calidad de agua en distintas regiones.
-**Técnicas utilizadas:** Detección de valores faltantes, análisis exploratorio de datos (EDA), visualización con Matplotlib y Seaborn.
-**Aplicaciones:** Monitoreo ambiental y toma de decisiones en gestión del agua.
+    ## Proyectos incluidos
 
-### 3️⃣ Extracción de Texto de Imágenes
-**Descripción:** Uso de técnicas de Reconocimiento Óptico de Caracteres (OCR) para extraer y limpiar texto de imágenes.
-**Herramientas utilizadas:** Tesseract OCR, OpenCV, Python.
-**Aplicaciones:** Digitalización de documentos, procesamiento de imágenes médicas y análisis de texto en redes sociales.
+    - [Proyecto_1](Proyecto_1)
+- [Proyecto_2](Proyecto_2)
+- [Proyecto_3](Proyecto_3)
+- [Proyecto_4](Proyecto_4)
+- [Proyecto_5](Proyecto_5)
 
-### 4️⃣ Detección de Datos Atípicos (Outliers)
-**Descripción:** Implementación de algoritmos para identificar anomalías en bases de datos financieras y médicas.
-**Técnicas utilizadas:** Boxplot, Z-score, Isolation Forest, DBSCAN.
-**Aplicaciones:** Prevención de fraudes financieros, detección de errores en registros médicos.
+    ## Estructura t?pica
 
-### 5️⃣ Procesamiento de Texto
-**Descripción:** Preprocesamiento de datos provenientes de redes sociales para análisis de sentimiento y clasificación de textos.
-**Técnicas utilizadas:** Tokenización, lematización, eliminación de stopwords, TF-IDF, Word2Vec.
-**Aplicaciones:** Análisis de opiniones, marketing digital, monitoreo de tendencias.
+    - [data/](./data) o subcarpetas con datos locales
+    - [notebooks/](./notebooks), [notebook/](./notebook) o [src/](./src) para an?lisis y scripts
+    - [models/](./models) para artefactos entrenados
+    - [documents/](./documents), [docs/](./docs) o [html/](./html) para reportes y visualizaciones
 
-## 🚀 Cómo Usar Este Repositorio
+    ## Flujo recomendado
 
-1. Clonar el repositorio:
-   ```sh
-   git clone https://github.com/usuario/proyectos_tratamiento_datos.git
-   ```
-2. Instalar dependencias necesarias:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Ejecutar los scripts según el proyecto de interés dentro de la carpeta correspondiente.
+    ```mermaid
+    flowchart TD
+        A[Datos] --> B[An?lisis]
+        B --> C[Modelado]
+        C --> D[Reportes y artefactos]
+    ```
 
-## 📌 Recursos Adicionales
-- Documentación de Pandas: [https://pandas.pydata.org/docs/](https://pandas.pydata.org/docs/)
-- Guía de OpenCV: [https://docs.opencv.org/](https://docs.opencv.org/)
-- Análisis de sentimiento con NLTK: [https://www.nltk.org/](https://www.nltk.org/)
+    ## Enlaces relacionados
 
----
+    - [Portafolio principal](../README.md)

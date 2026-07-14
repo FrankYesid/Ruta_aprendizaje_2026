@@ -1,54 +1,24 @@
-# Análisis de Texto Jurídico (EUR-Lex)
+        # An?lisis de Texto Jur?dico
 
-## Descripción del Proyecto
+        Este proyecto forma parte de la secci?n **An?lisis Avanzado** y est? pensado para mostrar un flujo completo de trabajo: desde los datos hasta los resultados finales.
 
-Este proyecto aplica técnicas avanzadas de Procesamiento de Lenguaje Natural (NLP) para entender, procesar y extraer información valiosa de documentos legales a gran escala. Utilizando el corpus de la Unión Europea (EUR-Lex), se abordan tareas que van desde la exploración inicial y limpieza de textos hasta el reconocimiento de entidades (NER), clasificación automática, modelado de tópicos y búsqueda semántica por similitud.
+        ## Objetivo
 
-## Dataset
+        Explorar, procesar y comunicar los hallazgos del problema abordado, utilizando notebooks, scripts y artefactos que permitan reproducir el an?lisis.
 
-- **Nombre:** EurlexResources (A Corpus Covering the Largest EURLEX Resources)
-- **Fuente:** Hugging Face (joelniklaus/eurlex_resources)
-- **URL:** [https://huggingface.co/datasets/joelniklaus/eurlex_resources](https://huggingface.co/datasets/joelniklaus/eurlex_resources)
-- **Características:** Corpus masivo (~179GB) que incluye jurisprudencia (caselaw), decisiones, directivas, reglamentos y propuestas de la UE en múltiples idiomas.
-- **Acceso:** Se utiliza el modo `streaming=True` de la librería `datasets` para manejar los datos sin necesidad de descarga completa.
+        ## Qu? encontrar?s aqu?
 
-## Estructura del Proyecto
+        - [data/](./data): datos de entrada y recursos del proyecto
+- [notebooks/](./notebooks): cuadernos de trabajo y experimentaci?n
 
-```
-Proyecto_4/
-├── data/              # Carpeta para reportes o muestras locales
-├── notebooks/         # Flujo de trabajo completo
-│   ├── 01_carga_y_exploracion.ipynb      # Ingesta en streaming y análisis descriptivo
-│   ├── 02_preprocesamiento_y_ner.ipynb   # Limpieza y extracción de entidades (NER)
-│   ├── 03_clasificacion_de_documentos.ipynb # Modelos de clasificación de texto
-│   ├── 04_analisis_de_topicos.ipynb      # Descubrimiento de temas (LDA)
-│   └── 05_busqueda_y_similitud.ipynb     # Búsqueda semántica con Embeddings
-├── requirements.txt   # Dependencias del proyecto
-└── README.md          # Documentación actual
-```
+        ## Ruta recomendada de revisi?n
 
-## Requerimientos de Instalación
+        1. Revisar la carpeta de datos para entender el contexto del problema.
+        2. Abrir los notebooks o scripts para seguir la l?gica del an?lisis.
+        3. Verificar los resultados en reportes, m?tricas o modelos entrenados.
+        4. Comparar el proyecto con otros de la misma secci?n para identificar patrones y buenas pr?cticas.
 
-Puedes instalar las dependencias necesarias ejecutando:
+        ## Enlaces relacionados
 
-```bash
-pip install -r requirements.txt
-```
-
-O manualmente:
-
-```bash
-pip install datasets pandas numpy matplotlib seaborn scikit-learn transformers torch sentence-transformers jupyter
-```
-
-## Flujo de Trabajo
-
-1. **Carga y Exploración**: Uso de la API de Hugging Face para acceder a la jurisprudencia y documentos legales en tiempo real.
-2. **Preprocesamiento y NER**: Limpieza de ruido textual y uso de modelos pre-entrenados (BERT/RoBERTa) para identificar organizaciones, personas y lugares.
-3. **Clasificación**: Entrenamiento de clasificadores para categorizar documentos según su contenido jurídico.
-4. **Análisis de Tópicos**: Aplicación de LDA para identificar los temas predominantes en el corpus legal.
-5. **Búsqueda Semántica**: Implementación de un buscador que utiliza similitud del coseno sobre vectores densos para encontrar leyes o casos relacionados.
-
----
-**Autor:** Frank Yesid
-**Año:** 2025
+        - [An?lisis Avanzado](../README.md)
+        - [Portafolio principal](../../README.md)

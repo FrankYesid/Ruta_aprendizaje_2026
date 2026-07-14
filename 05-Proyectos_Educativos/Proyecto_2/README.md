@@ -1,58 +1,24 @@
-# Retos de Limpieza de Datos (Data Cleaning)
+        # Retos de Limpieza de Datos
 
-## Descripción del Proyecto
+        Este proyecto forma parte de la secci?n **Proyectos Educativos** y est? pensado para mostrar un flujo completo de trabajo: desde los datos hasta los resultados finales.
 
-Este proyecto educativo está diseñado para practicar una de las tareas más críticas en la ciencia de datos: la **limpieza y preparación de datos**. Se utiliza un dataset real sobre las giras musicales más exitosas de la historia, el cual presenta múltiples problemas de calidad que deben ser resueltos para realizar análisis posteriores precisos.
+        ## Objetivo
 
-El enfoque es el desarrollo de habilidades para identificar e implementar soluciones a problemas comunes como valores nulos, formatos de moneda inconsistentes, caracteres especiales, y errores de tipografía.
+        Explorar, procesar y comunicar los hallazgos del problema abordado, utilizando notebooks, scripts y artefactos que permitan reproducir el an?lisis.
 
-## Dataset
+        ## Qu? encontrar?s aqu?
 
-- **Nombre:** Dirty Dataset to Practice Data Cleaning
-- **Fuente:** [Amrutha Yenikonda / Kaggle](https://www.kaggle.com/datasets/amruthayenikonda/dirty-dataset-to-practice-data-cleaning)
-- **Archivo Local:** `data/my_file (1).csv`
-- **Contenido:** 
-  - Estadísticas de giras mundiales de artistas como Taylor Swift, Beyoncé, Madonna, etc.
-  - Columnas con ingresos brutos (ajustados y reales), años de gira, número de shows y rankings.
-- **Problemas de Calidad Identificados:**
-  - Símbolos de moneda (`$`) y comas intercalados en valores numéricos.
-  - Referencias bibliográficas entre corchetes (ej. `[1]`, `[a]`) dentro de los datos.
-  - Caracteres especiales como cruces (`†`, `‡`) y asteriscos (`*`).
-  - Formatos de fecha y rangos de años inconsistentes.
-  - Valores faltantes en rankings y estadísticas secundarias.
+        - [data/](./data): datos de entrada y recursos del proyecto
+- [notebooks/](./notebooks): cuadernos de trabajo y experimentaci?n
 
-## Estructura del Proyecto
+        ## Ruta recomendada de revisi?n
 
-```
-Proyecto_2/
-├── data/                  # Archivos de datos originales y procesados
-│   ├── my_file (1).csv    # Dataset original "sucio"
-│   └── music_tours_cleaned.csv # Resultado final de la limpieza
-├── notebooks/             # Retos de limpieza y visualización paso a paso
-│   ├── 01_exploracion_inicial.ipynb # Identificación de problemas de calidad
-│   ├── 02_limpieza_y_normalizacion.ipynb # Transformación y corrección de datos
-│   ├── 03_visualizacion_basica.ipynb # Distribuciones y estadísticas descriptivas
-│   └── 04_analisis_visual_avanzado.ipynb # Correlaciones y tendencias económicas
-├── requirements.txt       # Dependencias necesarias (pandas, seaborn, etc.)
-└── README.md              # Documentación actual
-```
+        1. Revisar la carpeta de datos para entender el contexto del problema.
+        2. Abrir los notebooks o scripts para seguir la l?gica del an?lisis.
+        3. Verificar los resultados en reportes, m?tricas o modelos entrenados.
+        4. Comparar el proyecto con otros de la misma secci?n para identificar patrones y buenas pr?cticas.
 
-## Requerimientos de Instalación
+        ## Enlaces relacionados
 
-Puedes instalar las dependencias necesarias ejecutando:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Objetivos del Reto
-
-1.  **Diagnóstico de Calidad**: Aprender a utilizar `pandas` para identificar inconsistencias estructurales y de contenido.
-2.  **Expresiones Regulares (Regex)**: Utilizar el módulo `re` de Python para limpiar cadenas de texto complejas y extraer valores numéricos.
-3.  **Normalización de Formatos**: Convertir columnas de ingresos y fechas en tipos de datos adecuados para el análisis numérico.
-4.  **Visualización Exploratoria**: Utilizar `matplotlib` y `seaborn` para comunicar hallazgos y validar la efectividad de la limpieza.
-5.  **Análisis de Correlaciones**: Identificar relaciones entre el número de shows, rankings e ingresos ajustados a la inflación.
-
----
-**Autor:** Frank Yesid
-**Año:** 2025
+        - [Proyectos Educativos](../README.md)
+        - [Portafolio principal](../../README.md)
