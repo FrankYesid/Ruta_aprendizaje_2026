@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Informe descriptivo - Crop Yield Prediction</title>
+  <style>body{font-family:Arial, sans-serif; margin:2rem;} h1,h2{color:#1f4e79;} img{max-width:100%; border:1px solid #ddd; padding:0.5rem;} table{border-collapse:collapse; width:100%; margin-bottom:1rem;} th,td{border:1px solid #ddd; padding:0.5rem; text-align:left;} th{background:#f2f2f2;}</style>
+</head>
+<body>
+  <h1>Informe descriptivo del proyecto de predicción de rendimiento agrícola</h1>
+  <p>Este informe resume la descriptiva exploratoria del dataset integrado a partir de las tablas de lluvia, temperatura, pesticidas y rendimiento.</p>
+  <h2>Resumen estadístico de variables principales</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>hg/ha_yield</th>
+      <th>average_rain_fall_mm_per_year</th>
+      <th>pesticides_tonnes</th>
+      <th>avg_temp</th>
+      <th>pesticides_log</th>
+      <th>rainfall_log</th>
+      <th>temp_rain_interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>28242.00</td>
+      <td>28242.00</td>
+      <td>28242.00</td>
+      <td>28242.00</td>
+      <td>28242.00</td>
+      <td>28242.00</td>
+      <td>28242.00</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>77053.33</td>
+      <td>1149.06</td>
+      <td>37076.91</td>
+      <td>20.54</td>
+      <td>8.97</td>
+      <td>6.81</td>
+      <td>25007.11</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>84956.61</td>
+      <td>709.81</td>
+      <td>59958.78</td>
+      <td>6.31</td>
+      <td>2.47</td>
+      <td>0.79</td>
+      <td>19421.89</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>50.00</td>
+      <td>51.00</td>
+      <td>0.04</td>
+      <td>1.30</td>
+      <td>0.04</td>
+      <td>3.95</td>
+      <td>402.50</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>19919.25</td>
+      <td>593.00</td>
+      <td>1702.00</td>
+      <td>16.70</td>
+      <td>7.44</td>
+      <td>6.39</td>
+      <td>9976.08</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>38295.00</td>
+      <td>1083.00</td>
+      <td>17529.44</td>
+      <td>21.51</td>
+      <td>9.77</td>
+      <td>6.99</td>
+      <td>22789.00</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>104676.75</td>
+      <td>1668.00</td>
+      <td>48687.88</td>
+      <td>26.00</td>
+      <td>10.79</td>
+      <td>7.42</td>
+      <td>32913.09</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>501412.00</td>
+      <td>3240.00</td>
+      <td>367778.00</td>
+      <td>30.65</td>
+      <td>12.82</td>
+      <td>8.08</td>
+      <td>89974.80</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Matriz de correlación</h2>
+  <img src="correlation_matrix.png" alt="Matriz de correlación" />
+  <h2>Correlaciones con la variable objetivo</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>corr_hg_ha_yield</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>pesticides_log</th>
+      <td>0.147</td>
+    </tr>
+    <tr>
+      <th>pesticides_tonnes</th>
+      <td>0.064</td>
+    </tr>
+    <tr>
+      <th>rainfall_log</th>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <th>average_rain_fall_mm_per_year</th>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <th>temp_rain_interaction</th>
+      <td>-0.045</td>
+    </tr>
+    <tr>
+      <th>avg_temp</th>
+      <td>-0.115</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>Distribución por cultivo</h2>
+  <img src="yield_by_crop.png" alt="Rendimiento por cultivo" />
+  <h2>Conclusiones</h2>
+  <ul>
+    <li>La precipitación y su transformación logarítmica muestran una relación positiva moderada con el rendimiento.</li>
+    <li>La temperatura y la interacción entre temperatura y lluvia aportan información útil para el modelo.</li>
+    <li>El uso de pesticidas presenta valores muy dispersos, por lo que su transformación logarítmica mejora la estabilidad del análisis.</li>
+  </ul>
+</body>
+</html>
