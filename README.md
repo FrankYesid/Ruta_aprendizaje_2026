@@ -1,6 +1,7 @@
 # Portafolio de Ciencia de Datos y Aprendizaje Autónomo
 
 Este repositorio organiza un portafolio práctico de proyectos de ciencia de datos, desde visualización y limpieza hasta modelado, análisis avanzado y soluciones aplicadas al mundo real.
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/FrankYesid/Ruta_aprendizaje_2026)
 
 ## Mapa general del flujo
 
