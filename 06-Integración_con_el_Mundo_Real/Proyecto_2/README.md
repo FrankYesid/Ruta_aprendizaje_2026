@@ -16,6 +16,7 @@ Este proyecto está enfocado en el desarrollo de modelos de predicción meteorol
 - [data/](./data): archivos de entrenamiento y prueba.
 - [notebooks/](./notebooks): notebooks de EDA, ingeniería de variables, clasificación y forecasting.
 - [reports/](./reports): entregables iniciales de análisis exploratorio.
+- []
 
 ## Requerimientos
 
